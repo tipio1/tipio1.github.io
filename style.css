@@ -10,10 +10,10 @@ write by Ben.R */
 
 body
 {
-   background-color: rgba(243, 235, 235, 0.8); /* background: url('images/binary.jpg');                                  /* or : #5695d4;  */
+   background: url('images/lego.jpg');                                  /* or : background-color: rgba(243, 235, 235, 0.8);*/
    /* color: #181818; */
    background-repeat: no-repeat;
-   background-position: top;                                               /* image start position */
+   background-position: center;                                               /* image start position */
    position: absolute;
    width: 99%;
    height: 100%;
@@ -154,11 +154,11 @@ div
 p
 {
    font-weight: oblique;
-   border: 1px solid black;
-   box-shadow: 1px 1px 1px black inset;
+   /* border: 1px solid black;
+   box-shadow: 1px 1px 1px black inset; */
    text-align: center;
    width: 600px;
-   height: 400px;
+   height: 350px;
    margin: auto;
    padding: 10px;
    word-wrap: break-word;
@@ -168,8 +168,8 @@ p
 element
 {
    font-weight: oblique;
-   border: 1px solid black;
-   box-shadow: 1px 1px 1px black inset;
+   /* border: 1px solid black;
+   box-shadow: 1px 1px 1px black inset; */
    text-align: center;
    width: 600px;
    height: 110px;
@@ -186,9 +186,9 @@ nav
    width: 220px;
    font-weight: oblique;
    text-align: left;
-   background-color: rgba(243, 235, 235, 0.8);
+   /* background-color: rgba(243, 235, 235, 0.8);
    border: 1px solid black;
-   box-shadow: 1px 1px 1px black inset;
+   box-shadow: 1px 1px 1px black inset; */
    height: 300px;
    margin: left;
    padding: 10px;                            /* marging interior 12px */
@@ -199,11 +199,11 @@ aside
    float: right;
    font-weight: oblique;
    text-align: center;
-   background-color: rgba(255, 255, 255, 0.8);
+   /* background-color: rgba(255, 255, 255, 0.8); 
    border: 1px solid rgb(8, 245, 8);
-   box-shadow: 1px 1px 1px rgb(182, 13, 13) inset;
+   box-shadow: 1px 1px 1px rgb(182, 13, 13) inset; */
    width: 300px;
-   height: 500px;
+   height: 400px;
    margin: left;
    padding: 0px;                            /* marging interior 12px */
 }
