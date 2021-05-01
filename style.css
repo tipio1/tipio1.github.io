@@ -6,36 +6,141 @@ write by Ben.R */
     font-family: "Trebuchet MS", Verdana, Impact, "Arial Black", Arial, sans-serif;
 }
 
+/* Principals page elements */
+
 body
 {
-    background-color: #F0F2F4;
+   background-color: rgba(243, 235, 235, 0.8); /* background: url('images/binary.jpg');                                  /* or : #5695d4;  */
+   /* color: #181818; */
+   background-repeat: no-repeat;
+   background-position: top;                                               /* image start position */
+   position: absolute;
+   width: 99%;
+   height: 100%;
 }
 
-/*topsection
+#main_wrapper
 {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    align-content: space-between;
-    height: 1000px;    
-   } */
+   width: 100%;
+   margin: auto;
+}
+
+section, footer, nav
+{
+   font-family: Dayrom, serif;
+   font-weight: normal;
+   text-transform: lowercase;                    /* or : uppercase; for majusculs */
+}
+
+/* Header */
+
+header
+{
+   background: url('images/banheader.jpg') repeat-x bottom;                        /* or :  rgb(213, 226, 228); */
+   /* display: flex; */
+   justify-content: space-between;
+   align-items: flex-end;
+   color: #221b1c;
+   border-bottom: 1px solid #221b1c;
+   width: 100%;
+   box-shadow: 1px 2px 2px black;
+   clear: both;
+}
+
+.titre
+{
+   /* display: right; */
+   /* flex-direction: column; */
+   color: rgb(69, 54, 122);
+   font-size: x-large;
+   font-weight: oblique;
+   font-weight: bold;
+   text-align: center;
+   margin-top: 80px;
+   text-shadow: 1px 1px 1px black;
+   clear: both;
+   width: 15%;
+   align-items: right;
+   /* border: 1px black outset; */
+}
+
+.titre:hover                                    /* links flyover aparance */
+{
+   text-decoration: underline;
+   color: orange; 
+}
+
+.button
+{
+   color: rgb(69, 54, 122);
+   font-size: x-large;
+   font-weight: oblique;
+   font-weight: bold;
+   text-align: center;
+   height: 25px;
+   position: absolute;
+   right: 5px;
+   bottom: 5px;
+   border: 1px solid #2b2c55;
+   border-radius: 5px;
+   font-size: 1.2em;
+   text-align: center;
+   padding: 3px 8px 0px 8px;
+   /* color: white; */
+   text-decoration: none;
+}
+
+#banner_description
+{
+    position: absolute;
+    bottom: 0;
+    border-radius: 5px;
+    width: 90%;
+    height: 25px;
+    padding-top: 15px;
+    padding-left: 5px;
+    background-color: rgba(196, 182, 182, 0.8);
+    /* color: white; */
+    font-size: 0.8em;
+    }
+
+ em
+{
+   font-size: x-large;
+   font-weight: oblique;
+   font-weight: bold;
+   color: rgb(69, 54, 122);
+   text-align: left;
+   margin-top: -60px;
+   text-shadow: 1px 1px 1px black;
+   clear: both;
+   width: 100%;
+}
+
+#logo
+{
+   display: flex;
+   /* flex-direction: comlumn; */
+   align-items: center;
+}
+
+#logo img
+{
+   width: 150px;
+   height: 150px;
+}
 
 mark
 {
                                     
-    background-color: #F0F2F4;      /* backgroud color take step on all the page*/ 
+   background-color: #F0F2F4;                  /* backgroud color take step on all the page*/ 
 }
 
 .float1
 {
-    float: right;
-    margin: auto;
-    border: 1px black outset;
-}
-
-.float2
-{
-    float: right;
+   float: right;
+   margin: auto;
+   border: 1px black outset;
 }
 
 div
@@ -43,23 +148,7 @@ div
    font-size: large;
    font-weight: oblique;
    font-weight: bold;
-   text-align: right;
-}
-
-.titre
-{
-   color: brown;
-   font-size: x-large;
-   font-weight: oblique;
-   font-weight: bold;
-   text-align: right;
-   width: 100%;
-}
-
-.titre:hover                           /* links flyover aparance */
-{
-   text-decoration: underline;
-   color: orange;
+   text-align: left;
 }
 
 p
@@ -96,8 +185,9 @@ nav
    float: left;
    width: 220px;
    font-weight: oblique;
-   border: 1px solid black;
    text-align: left;
+   background-color: rgba(243, 235, 235, 0.8);
+   border: 1px solid black;
    box-shadow: 1px 1px 1px black inset;
    height: 300px;
    margin: left;
@@ -108,24 +198,43 @@ aside
 {
    float: right;
    font-weight: oblique;
-   border: 1px solid rgb(8, 245, 8);
    text-align: center;
+   background-color: rgba(255, 255, 255, 0.8);
+   border: 1px solid rgb(8, 245, 8);
    box-shadow: 1px 1px 1px rgb(182, 13, 13) inset;
    width: 300px;
-   height: 300px;
-   /*margin: right;*/
-   padding: 10px;                            /* marging interior 12px */
+   height: 500px;
+   margin: left;
+   padding: 0px;                            /* marging interior 12px */
 }
 
+aside1
+{
+   float: right;
+   font-weight: oblique;
+   text-align: left;
+   background-color: rgba(255, 255, 255, 0.8);
+   border: 1px solid rgb(8, 245, 8);
+   box-shadow: 1px 1px 1px rgb(182, 13, 13) inset;
+   width: 300px;
+   height: 500px;
+   margin: left;
+   padding: 0px;                            /* marging interior 12px */
+}
 
-strong
+.float2
+{
+   float: center;
+}
+
+/* strong
 {
    color :brown;
    font-style: italic;
    text-align: center;
    text-shadow: 1px 1px 1px black;
    clear: both;
-}
+}*/
 
 h5
 {
@@ -134,7 +243,7 @@ h5
    clear: both;
 }
 
-ul, h2
+ul
 {
    color: brown;
    font-style: italic;
@@ -160,7 +269,7 @@ h6:hover                                     /* links flyover aparance */
    
 .repeat, footer
 {
-   color: rgb(40,227,27);
+   color: rgb(61, 78, 60);
    font-size: large;
-   text-align: right;
+   text-align: center;
 }
