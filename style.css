@@ -102,10 +102,10 @@ div
 p
 {
    font-weight: oblique;
-   /* border: 1px solid black;
-   box-shadow: 1px 1px 1px black inset; */
+   /* border: 1px solid black; */
+   /* box-shadow: 1px 1px 1px black inset; */
    text-align: center;
-   width: 600px;
+   width: 700px;
    height: 350px;
    margin: auto;
    padding: 10px;
@@ -131,7 +131,7 @@ nav
 
 aside
 {
-   background: url('images/music.jpg') repeat-x top;   /* or : rgba(240, 241, 241, 0.85); */
+   background: url('images/music.jpg') repeat-x top ;   /* or : rgba(240, 241, 241, 0.85); */
    justify-content: space-between;
    align-items: flex-end;
    color: #221b1c;
@@ -208,6 +208,22 @@ h5
    clear: both;
 }
 
+table
+{
+   margin: auto;
+   margin-left: 300px;
+   font-family: sans-serif;
+   text-align: center;
+   background-color: rgba(236, 226, 226, 0.6);
+   border-collapse: separate;             /* or : collapse */
+   border-radius: 5px;
+   width: 55%;
+}
+td, th                                    /* Make a border on the td and the th */
+{
+    border: 1px solid black;
+}
+
 /* Footer */
 
 footer
@@ -218,9 +234,10 @@ footer
    align-items: flex-end;
    color: #221b1c;
    /* border-bottom: 1px solid #221b1c; */
+   opacity: 0,2;
    border-top: 1px solid #221b1c;
    width: 100%;
-   height: 150px;
+   height: auto;
    border-radius: 5px;
    box-shadow: 1px 2px 2px black;
    /* clear: none; */
@@ -243,7 +260,7 @@ h6:hover                                                       /* links flyover 
    color: orange;
 }
 
-.infinity
+#infinity
 {
    font-size: large;
    font-weight: oblique;
@@ -251,11 +268,12 @@ h6:hover                                                       /* links flyover 
    text-decoration: none;
    color: rgb(69, 54, 122);
    text-shadow: 1px 1px 1px black;
-   position: absolute;
-   left: 1px;
-   bottom: -450px;
-   /* margin: auto; 
-   /* text-align: right;
+   margin-left: auto;
+   /* position: absolute; */
+   /* left: 1px; */
+   /* bottom: -500px; */
+   /* margin: auto; */
+   /* text-align: right; */
    /* height: 5px;
    /* border: 1px solid #2b2c55;
    /* border-radius: 5px;
@@ -269,7 +287,7 @@ h6:hover                                                       /* links flyover 
    /* align-items: right; */
 }
 
-.home
+#home
 {
    font-size: large;
    font-weight: oblique;
@@ -279,7 +297,8 @@ h6:hover                                                       /* links flyover 
    text-shadow: 1px 1px 1px black;
    position: absolute;
    right: 1px;
-   bottom: -450px;
+   margin-right: auto;
+   /* bottom: -500px; */
    /* margin: auto; 
    /* text-align: right;
    /* height: 5px;
