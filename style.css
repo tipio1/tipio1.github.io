@@ -216,12 +216,27 @@ table
    text-align: center;
    background-color: rgba(236, 226, 226, 0.6);
    border-collapse: separate;             /* or : collapse */
-   border-radius: 5px;
+   border-radius: 15px;
    width: 55%;
 }
+
 td, th                                    /* Make a border on the td and the th */
 {
     border: 1px solid black;
+}
+
+form                                  
+{
+   width: 35%;
+   height: 450px;
+   margin: auto;
+   border: 1px solid black;
+}
+
+#send                                 
+{
+   margin: 30px;
+   border: 1px solid black;
 }
 
 /* Footer */
