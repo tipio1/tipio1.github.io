@@ -132,10 +132,7 @@ p
 
 nav
 {
-   width: auto;
-   text-align: left;
-   flex-direction: row;
-   /* position: fixed;
+   position: fixed;
    float: left;
    width: 220px;
    font-weight: oblique;
@@ -143,14 +140,15 @@ nav
    text-shadow: 0.5px 0.5px 0.5px black;
    /* background-color: rgba(243, 235, 235, 0.8);
    border: 1px solid black;
-   box-shadow: 1px 1px 1px black inset; 
+   box-shadow: 1px 1px 1px black inset; */
    height: 300px;
    margin: left;
-   padding: 10px;                                               marging interior 12px */
+   padding: 10px;                                                /* marging interior 12px */
 }
 
 aside
 {
+   display: none;
    background: url('images/music.jpg') repeat-x top ;   /* or : rgba(240, 241, 241, 0.85); */
    /* justify-content: space-between; */
    align-items: flex-end;
