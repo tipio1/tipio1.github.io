@@ -1,0 +1,399 @@
+/* style.css
+---------
+write by Ben.R */
+
+/* Principals page elements */
+
+*
+{
+    font-family: "Trebuchet MS", Verdana, Impact, "Arial Black", Arial, sans-serif;
+}
+
+
+#main_wrapper
+{
+   width: 100%;
+   margin: auto;
+}
+
+body
+{
+   flex-direction: column;
+   background: url('images/blocknetwork.jpg');           /* or : background-color: rgba(243, 235, 235, 0.8);*/
+   background-size: cover;
+   /* color: #181818; */
+   background-repeat: no-repeat;
+   background-position: top;                             /* image start position */
+   position: absolute;
+   width: 99%;
+   height: 100%;
+}
+
+/* Header */
+header
+{
+   background: rgba(240, 241, 241, 0.85);             /* or : url('images/banner.jpg') repeat-x bottom;  */
+   /* display: flex; */
+   justify-content: space-between;
+   align-items: flex-end;
+   color: #221b1c;
+   border-bottom: 1px solid #221b1c;
+   width: 100%;
+   box-shadow: 1px 2px 2px black;
+   clear: both;
+}
+
+.titre
+{
+   /* display: right;
+   flex-direction: column;
+   border: 1px black outset; */
+   color: rgb(69, 54, 122);
+   font-size: x-large;
+   font-weight: oblique;
+   font-weight: bold;
+   text-align: center;
+   margin-top: 80px;
+   text-shadow: 1px 1px 1px black;
+   clear: both;
+   width: 15%;
+   align-items: right;
+   /* text-transform: lowercase;                       or : uppercase; for majusculs */
+}
+
+.titre:hover                                           /* links flyover aparance */
+{
+   text-decoration: underline;
+   color: orange; 
+}
+
+ em
+{
+   font-size: x-large;
+   font-weight: oblique;
+   font-weight: bold;
+   color: rgb(69, 54, 122);
+   text-align: left;
+   margin-top: -60px;
+   text-shadow: 1px 1px 1px black;
+   clear: both;
+   width: 100%;
+}
+
+#logo
+{
+   display: flex;
+   /* flex-direction: comlumn; */
+   align-items: center;
+}
+
+#logo img
+{
+   width: 150px;
+   height: 150px;
+}
+
+/* section */
+
+section
+{
+   flex-direction: column;
+   justify-content: space-between;
+   align-items: flex-end;
+}
+
+div
+{
+   font-size: large;
+   font-weight: oblique;
+   font-weight: bold;
+   text-align: left;
+}
+
+p
+{
+   /* font-weight: oblique;
+   border: 1px solid black; */
+   box-shadow: 1px 1px 1px black inset; 
+   /* text-align: center;
+   width: 700px; */
+   width: 150px;
+   height: 350px;
+   /* margin: auto;
+   padding: 10px;
+   word-wrap: break-word; */
+   color: rgb(172, 143, 226); 
+   background-color:none;
+   font-size: 1.2em;
+   margin: auto;
+   clear: both;
+   
+}
+
+nav
+{
+   width: auto;
+   text-align: left;
+   flex-direction: row;
+   /* position: fixed;
+   float: left;
+   width: 220px;
+   font-weight: oblique;
+   text-align: left;
+   text-shadow: 0.5px 0.5px 0.5px black;
+   /* background-color: rgba(243, 235, 235, 0.8);
+   border: 1px solid black;
+   box-shadow: 1px 1px 1px black inset; 
+   height: 300px;
+   margin: left;
+   padding: 10px;                                               marging interior 12px */
+}
+
+aside
+{
+   background: url('images/music.jpg') repeat-x top ;   /* or : rgba(240, 241, 241, 0.85); */
+   /* justify-content: space-between; */
+   align-items: flex-end;
+   color: #221b1c;
+   border-bottom: 1px solid #221b1c;
+   width: 100%;
+   box-shadow: 1px 2px 2px black;
+   clear: right;
+   float: right ;
+   font-weight: oblique;
+   text-align: center; 
+   /* background-color: rgba(255, 255, 255, 0.8); 
+   border: 1px solid rgb(8, 245, 8);
+   box-shadow: 1px 1px 1px rgb(182, 13, 13) inset; */
+   /* display: flex; */
+   width: 250px;
+   height: 600px;
+   border-radius: 5px;
+   margin: right;
+   padding: 0px;                                              /* marging interior 12px */
+}
+
+ul
+{
+   color: rgb(62, 63, 104);
+   font-style: italic;
+   text-align: left;
+   text-shadow: 0.5px 0.5px 0.5px black;
+}
+
+#button
+{
+   font-size: large;
+   font-weight: oblique;
+   font-weight: bold;
+   text-decoration: none;
+   color: rgb(69, 54, 122);
+   text-shadow: 1px 1px 1px black;
+   position: absolute;
+   right: 1px;
+   bottom: -150px;
+   /* margin: auto; 
+   /* text-align: right;
+   /* height: 5px;
+   /* border: 1px solid #2b2c55;
+   /* border-radius: 5px;
+   /* font-size: 1.2em;
+   /* padding: 10px 10px 10px 10px; 
+   /* color: white; 
+   /* text-align: right;
+   /* margin-top: 80px;
+   /* clear: right; 
+   /* width: 15%; 
+   /* align-items: right; */
+}
+
+/* #banner_button
+{
+   position: absolute;
+   bottom: 0;
+   border-radius: 5px;
+   width: 20%;
+   height: 25px;
+   padding-top: 15px;
+   padding-left: 5px;
+   background-color: rgba(196, 182, 182, 0.8);
+   /* color: white; 
+   font-size: 0.8em;
+} */
+
+h5
+{
+   font-weight: oblique;
+   text-align: center;
+   clear: both;
+}
+
+table
+{
+   margin: auto;
+   margin-left: 300px;
+   font-family: sans-serif;
+   text-align: center;
+   background-color: rgba(236, 226, 226, 0.6);
+   border-collapse: separate;             /* or : collapse */
+   border-radius: 15px;
+   border: 1px solid black;
+   width: 55%;
+}
+
+td, th                                    /* Make a border on the td and the th */
+{
+    border: 1px solid black;
+}
+
+form                                  
+{
+   width: 35%;
+   height: 450px;
+   margin: auto;
+   border: 1px solid black;
+}
+
+#send                                 
+{
+   margin: 30px;
+   border: 1px solid black;
+}
+
+/* Footer */
+
+footer
+{
+   background: url('images/banner.jpg') repeat-x bottom;                 /* or : rgba(218, 224, 224, 0.85); */
+   /* display: flex; */
+   /* justify-content: space-between;
+   align-items: flex-end;
+   color: #221b1c;
+   /* border-bottom: 1px solid #221b1c; */
+   opacity: 0,2;
+   border-top: 1px solid #221b1c;
+   width: 100%;
+   height: auto;
+   border-radius: 5px;
+   box-shadow: 1px 2px 2px black;
+   /* clear: none; */
+}
+
+h6
+{
+   color: green;
+   font-style: oblique;
+   text-decoration: blink;
+   text-align: center;
+   font-size: x-large;
+   margin: left;
+   padding: 10px;
+}
+   
+h6:hover                                                       /* links flyover aparance */
+{
+   text-decoration: underline;
+   color: orange;
+}
+
+#infinity
+{
+   font-size: large;
+   font-weight: oblique;
+   font-weight: bold;
+   text-decoration: none;
+   color: rgb(69, 54, 122);
+   text-shadow: 1px 1px 1px black;
+   margin-left: auto;
+   /* position: absolute; */
+   /* left: 1px; */
+   /* bottom: -500px; */
+   /* margin: auto; */
+   /* text-align: right; */
+   /* height: 5px;
+   /* border: 1px solid #2b2c55;
+   /* border-radius: 5px;
+   /* font-size: 1.2em;
+   /* padding: 10px 10px 10px 10px; 
+   /* color: white; 
+   /* text-align: right;
+   /* margin-top: 80px;
+   /* clear: right; 
+   /* width: 15%; 
+   /* align-items: right; */
+}
+
+#home
+{
+   font-size: large;
+   font-weight: oblique;
+   font-weight: bold;
+   text-decoration: none;
+   color: rgb(69, 54, 122);
+   text-shadow: 1px 1px 1px black;
+   position: absolute;
+   right: 1px;
+   margin-right: auto;
+   /* bottom: -500px; */
+   /* margin: auto; 
+   /* text-align: right;
+   /* height: 5px;
+   /* border: 1px solid #2b2c55;
+   /* border-radius: 5px;
+   /* font-size: 1.2em;
+   /* padding: 10px 10px 10px 10px; 
+   /* color: white; 
+   /* text-align: right;
+   /* margin-top: 80px;
+   /* clear: right; 
+   /* width: 15%; 
+   /* align-items: right; */
+}
+
+/* mark
+{
+                                    
+   background-color: #F0F2F4;                                 backgroud color take step on all the page
+}
+
+.float1
+{
+   float: right;
+   margin: auto;
+   border: 1px black outset;
+} 
+
+.float2
+{
+   float: center;
+}
+
+strong
+{
+   color :brown;
+   font-style: italic;
+   text-align: center;
+   text-shadow: 1px 1px 1px black;
+   clear: both;
+}
+
+element
+{
+   font-weight: oblique;
+   border: 1px solid black;
+   box-shadow: 1px 1px 1px black inset;
+   text-align: center;
+   width: 600px;
+   height: 110px;
+   margin-left: 270px;
+   margin: auto;
+   padding: 10px;
+   word-wrap: break-word;
+} 
+
+.repeat
+{
+   color: rgb(61, 78, 60);
+   font-size: large;
+   text-align: center;
+} */
