@@ -218,12 +218,12 @@ table
    border-collapse: separate;             /* or : collapse */
    border-radius: 15px;
    border: 1px solid black;
-   width: 55%;
+   width: 75%;
 }
 
 td, th                                    /* Make a border on the td and the th */
 {
-    border: 1px solid black;
+    border: 1px solid rgb(247, 243, 243);
 }
 
 form                                  
