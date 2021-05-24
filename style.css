@@ -26,6 +26,18 @@ body
    height: 100%;
 }
 
+.whiteBG
+{
+   background: rgba(243, 235, 235, 0.8);            /* or : background-color: url('images/blocknetwork.jpg');*/
+   /* background-size: cover;
+   /* color: #181818;
+   background-repeat: no-repeat;
+   background-position: top;*/                             /* image start position */
+   /* position: absolute; 
+   width: 99%;
+   height: 100%; */
+}
+
 /* Header */
 header
 {
@@ -208,7 +220,7 @@ h5
    clear: both;
 }
 
-table
+.LastSessions
 {
    margin: auto;
    margin-left: 300px;
@@ -220,6 +232,32 @@ table
    border: 1px solid black;
    width: 75%;
 }
+
+.ElementTable
+{
+   margin: auto;
+   margin-left: 300px;
+   font-family: sans-serif;
+   text-align: center;
+   /* background-color: rgba(99, 97, 97, 0.6); */
+   border-collapse: separate;             /* or : collapse */
+   border-radius: 15px;
+   border: 1px solid black;
+   width: 75%;
+}
+
+/* table
+{
+   margin: auto;
+   margin-left: 300px;
+   font-family: sans-serif;
+   text-align: center;
+   /* background-color: rgba(99, 97, 97, 0.6); 
+   border-collapse: separate;             /* or : collapse 
+   border-radius: 15px;
+   border: 1px solid black;
+   width: 75%;
+} */
 
 td, th                                    /* Make a border on the td and the th */
 {
