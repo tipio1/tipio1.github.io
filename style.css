@@ -233,6 +233,7 @@ h5
    width: 75%;
 }
 
+/* Element table */
 .ElementTable
 {
    margin: auto;
@@ -245,6 +246,75 @@ h5
    border: 1px solid black;
    width: 75%;
 }
+
+.other_non_metals
+{
+   background-color:#98fb98;
+}
+
+.alkaline
+{
+   background-color:#ff6666;
+}
+
+.alkaline_earth
+{
+   background-color:#ffdead
+}
+
+.lanthanides
+{
+   background-color:rgb(255, 191, 255);
+}
+
+.actinides
+{
+   background-color:rgb(255, 153, 204);
+}
+
+.transition_metals
+{
+   background-color:#ffb6c1;
+}
+
+.poor_metals
+{
+   background-color:#d3d3d3;
+}
+
+.metalloids
+{
+   background-color:#cccc99;
+}
+
+.halogen
+{
+   background-color:#ffff99;
+}
+
+.noble_gases
+{
+   background-color:#afeeee;
+}
+
+.unclassified_items
+{
+   background-color:rgb(245, 245, 245);
+}
+
+/* 
+   red : alkaline
+   beige : alkaline_earth
+   light pink : lanthanides
+   dark pink : actinides
+   Salmon : transition_metals
+   grey : poor_metals
+   khaki : metalloids
+   green : other_non_metals
+   yellow : halogen
+   blue : noble_gases
+   light grey/white : unclassified_items
+*/
 
 /* table
 {
