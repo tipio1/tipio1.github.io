@@ -233,7 +233,7 @@ h5
    width: 75%;
 }
 
-/* Element table */
+/* Element table => dénormalisation : repeat things / normalisation : keep the system more easy-DRY : don't repeat yourself => attention whit that! */
 .ElementTable
 {
    margin: auto;
@@ -245,6 +245,21 @@ h5
    border-radius: 15px;
    border: 1px solid black;
    width: 75%;
+}
+
+td, th                                    /* Make a border on the td and the th */
+{
+    border: 1px solid rgb(247, 243, 243);
+}
+
+.element>div {
+   border: 1px solid rgb(0, 0, 0);
+   text-align: center;
+}
+
+.element_name
+{
+   font-size: xx-small;
 }
 
 .other_non_metals
@@ -302,6 +317,19 @@ h5
    background-color:rgb(245, 245, 245);
 }
 
+.gaz
+{
+   color:rgb(255, 0, 0);
+}
+
+
+
+.atomic_mass
+{
+   color:black;
+}
+
+
 /* 
    red : alkaline
    beige : alkaline_earth
@@ -329,10 +357,7 @@ h5
    width: 75%;
 } */
 
-td, th                                    /* Make a border on the td and the th */
-{
-    border: 1px solid rgb(247, 243, 243);
-}
+
 
 form                                  
 {
