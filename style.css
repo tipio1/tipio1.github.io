@@ -26,6 +26,18 @@ body
    height: 100%;
 }
 
+.whiteBG
+{
+   background: rgba(243, 235, 235, 0.8);            /* or : background-color: url('images/blocknetwork.jpg');*/
+   /* background-size: cover;
+   /* color: #181818;
+   background-repeat: no-repeat;
+   background-position: top;*/                             /* image start position */
+   /* position: absolute; 
+   width: 99%;
+   height: 100%; */
+}
+
 /* Header */
 header
 {
@@ -171,7 +183,7 @@ ul
    text-shadow: 1px 1px 1px black;
    position: absolute;
    right: 1px;
-   bottom: -150px;
+   bottom: 10px;
    /* margin: auto; 
    /* text-align: right;
    /* height: 5px;
@@ -208,23 +220,144 @@ h5
    clear: both;
 }
 
-table
+.LastSessions
 {
    margin: auto;
    margin-left: 300px;
    font-family: sans-serif;
    text-align: center;
-   background-color: rgba(236, 226, 226, 0.6);
+   background-color: rgba(99, 97, 97, 0.6);
    border-collapse: separate;             /* or : collapse */
    border-radius: 15px;
    border: 1px solid black;
-   width: 55%;
+   width: 75%;
+}
+
+/* Element table => dénormalisation : repeat things / normalisation : keep the system more easy-DRY : don't repeat yourself => attention whit that! */
+.ElementTable
+{
+   margin: auto;
+   margin-left: 300px;
+   font-family: sans-serif;
+   text-align: center;
+   /* background-color: rgba(99, 97, 97, 0.6); */
+   border-collapse: separate;             /* or : collapse */
+   border-radius: 15px;
+   border: 1px solid black;
+   width: 75%;
 }
 
 td, th                                    /* Make a border on the td and the th */
 {
-    border: 1px solid black;
+    border: 1px solid rgb(247, 243, 243);
 }
+
+.element>div {
+   border: 3px solid rgb(0, 0, 0);
+   text-align: center;
+}
+
+.element_name
+{
+   font-size: xx-small;
+}
+
+.other_non_metals
+{
+   background-color:#98fb98;
+}
+
+.alkaline
+{
+   background-color:#ff6666;
+}
+
+.alkaline_earth
+{
+   background-color:#ffdead
+}
+
+.lanthanides
+{
+   background-color:rgb(255, 191, 255);
+}
+
+.actinides
+{
+   background-color:rgb(255, 153, 204);
+}
+
+.transition_metals
+{
+   background-color:#ffb6c1;
+}
+
+.poor_metals
+{
+   background-color:#d3d3d3;
+}
+
+.metalloids
+{
+   background-color:#cccc99;
+}
+
+.halogen
+{
+   background-color:#ffff99;
+}
+
+.noble_gases
+{
+   background-color:#afeeee;
+}
+
+.unclassified_items
+{
+   background-color:rgb(245, 245, 245);
+}
+
+.gaz
+{
+   color:rgb(255, 0, 0);
+}
+
+
+
+.atomic_mass
+{
+   color:black;
+}
+
+
+/* 
+   red : alkaline
+   beige : alkaline_earth
+   light pink : lanthanides
+   dark pink : actinides
+   Salmon : transition_metals
+   grey : poor_metals
+   khaki : metalloids
+   green : other_non_metals
+   yellow : halogen
+   blue : noble_gases
+   light grey/white : unclassified_items
+*/
+
+/* table
+{
+   margin: auto;
+   margin-left: 300px;
+   font-family: sans-serif;
+   text-align: center;
+   /* background-color: rgba(99, 97, 97, 0.6); 
+   border-collapse: separate;             /* or : collapse 
+   border-radius: 15px;
+   border: 1px solid black;
+   width: 75%;
+} */
+
+
 
 form                                  
 {
