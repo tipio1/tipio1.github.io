@@ -233,7 +233,7 @@ h5
    width: 75%;
 }
 
-/* Element table => dénormalisation : repeat things / normalisation : keep the system more easy-DRY : don't repeat yourself => attention whit that! */
+/* Element table => dénormalisation : repeat the things / normalisation : keep the system more easy-DRY : don't repeat yourself => attention whit that! */
 .ElementTable
 {
    margin: auto;
