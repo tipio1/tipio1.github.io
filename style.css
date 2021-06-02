@@ -102,6 +102,27 @@ header
    height: 150px;
 }
 
+.navElement
+{
+   width: 1200px;                                             
+   height: 100px;
+   font-weight: oblique;
+   font-size: small;
+   text-align: right;
+   margin: right;
+   padding: 10px;                                             /* marging interior 12px */
+   padding-bottom: 15px;
+   /* display: flex; */                                       /* search to align "nav.Element's block" on one line */
+   position: absolute;                                   /* don't want "nav.Element's block" moove with the navigation in the page */
+   /* float: left;
+   border: 1px solid black;
+   text-shadow: 0.5px 0.5px 0.5px black;
+   background-color: rgba(243, 235, 235, 0.8);
+   box-shadow: 1px 1px 1px black inset;
+   margin-left: auto; */
+}
+
+
 /* section */
 div
 {
@@ -113,17 +134,73 @@ div
 
 p
 {
+   /* background-color: #d3d3d3; */
    font-weight: oblique;
-   /* border: 1px solid black; */
+   border: 1px solid black;
    /* box-shadow: 1px 1px 1px black inset; */
    text-align: center;
-   width: 700px;
+   /* width: 700px; */
    height: 350px;
+   width: 60%;
    margin: auto;
    padding: 10px;
-   word-wrap: break-word;
-   
+   word-wrap: break-word;  
 }
+
+.cv
+{
+   /* background-color: #d3d3d3; */
+   font-weight: oblique;
+   border: 1px solid black;
+   /* box-shadow: 1px 1px 1px black inset; */
+   text-align: center;
+   /* width: 700px; */
+   height: 500px;
+   width: 60%;
+   margin: auto;
+   padding: 10px;
+   word-wrap: break-word;  
+}
+
+.qbat
+{
+   background-color: rgba(255, 255, 255, 0.85);
+   font-weight: oblique;
+   border: 1px solid black;
+   /* box-shadow: 1px 1px 1px black inset; */
+   text-align: left;
+   /* width: 700px; */
+   height: 350px;
+   width: 60%;
+   margin: auto;
+   padding: 10px;
+   word-wrap: break-word;   
+}
+
+.floatQbat
+{
+   float: right;
+   /* margin: auto; */
+   border: 1px black outset;
+}
+
+.qbatTittle                               /* why does not work for center ?*/
+{
+   color :brown;
+   font-style: italic;
+   text-align: center;
+   text-shadow: 1px 1px 1px black;
+   clear: both;
+}
+
+/* strong
+{
+   color :brown;
+   font-style: italic;
+   text-align: center;
+   text-shadow: 1px 1px 1px black;
+   clear: both;
+}*/
 
 nav
 {
@@ -143,7 +220,7 @@ nav
 
 aside
 {
-   background: url('images/music.jpg') repeat-x top ;   /* or : rgba(240, 241, 241, 0.85); */
+   background: url('images/music.jpg') repeat-x top ;         /* or : rgba(240, 241, 241, 0.85); */
    justify-content: space-between;
    align-items: flex-end;
    color: #221b1c;
@@ -159,7 +236,7 @@ aside
    box-shadow: 1px 1px 1px rgb(182, 13, 13) inset;
    display: flex;  */
    width: 250px;
-   height: 600px;
+   height: 500px;
    border-radius: 5px;
    margin: left;
    padding: 0px;                                              /* marging interior 12px */
@@ -183,7 +260,7 @@ ul
    text-shadow: 1px 1px 1px black;
    position: absolute;
    right: 1px;
-   bottom: 10px;
+   bottom: 120px;
    /* margin: auto; 
    /* text-align: right;
    /* height: 5px;
@@ -223,41 +300,67 @@ h5
 .LastSessions
 {
    margin: auto;
-   margin-left: 300px;
+   margin-left: 280px;
    font-family: sans-serif;
    text-align: center;
    background-color: rgba(99, 97, 97, 0.6);
    border-collapse: separate;             /* or : collapse */
    border-radius: 15px;
    border: 1px solid black;
-   width: 75%;
+   width: 60%;
 }
 
 /* Element table => dénormalisation : repeat the things / normalisation : keep the system more easy-DRY : don't repeat yourself => attention whit that! */
 .ElementTable
 {
    margin: auto;
-   margin-left: 300px;
+   margin-left: 25px;
    font-family: sans-serif;
    text-align: center;
    /* background-color: rgba(99, 97, 97, 0.6); */
    border-collapse: separate;             /* or : collapse */
    border-radius: 15px;
    border: 1px solid black;
-   width: 75%;
+   width: 95%;
 }
 
 td, th                                    /* Make a border on the td and the th */
 {
-    border: 1px solid rgb(247, 243, 243);
+   border: 1px solid rgb(247, 243, 243);
+   
 }
 
 .element>div {
    border: 1px solid rgb(0, 0, 0);
    text-align: center;
+   padding-right: 0.5px;
+   padding-left: 0.5px;
+   /* width: 40%;
+   height: 40%; */
 }
 
 .element_name
+{
+   font-size: xx-small;
+}
+
+.atomic_number
+{
+   font-size: xx-small;
+}
+
+.symbol
+{
+   font-size: large;
+}
+
+.symbol:hover 
+{
+   text-decoration: underline;
+   color: rgb(0, 0, 0);
+}
+
+.atomic_mass
 {
    font-size: xx-small;
 }
@@ -322,7 +425,10 @@ td, th                                    /* Make a border on the td and the th 
    color:rgb(255, 0, 0);
 }
 
-
+.liquide
+{
+   color:rgb(4, 0, 255);
+}
 
 .atomic_mass
 {
@@ -330,19 +436,19 @@ td, th                                    /* Make a border on the td and the th 
 }
 
 
-/* 
-   red : alkaline
-   beige : alkaline_earth
-   light pink : lanthanides
-   dark pink : actinides
-   Salmon : transition_metals
-   grey : poor_metals
-   khaki : metalloids
-   green : other_non_metals
-   yellow : halogen
-   blue : noble_gases
-   light grey/white : unclassified_items
-*/
+                                                                  /* 
+                                                                     red : alkaline
+                                                                     beige : alkaline_earth
+                                                                     light pink : lanthanides
+                                                                     dark pink : actinides
+                                                                     Salmon : transition_metals
+                                                                     grey : poor_metals
+                                                                     khaki : metalloids
+                                                                     green : other_non_metals
+                                                                     yellow : halogen
+                                                                     blue : noble_gases
+                                                                     light grey/white : unclassified_items
+                                                                  */
 
 /* table
 {
@@ -356,8 +462,6 @@ td, th                                    /* Make a border on the td and the th 
    border: 1px solid black;
    width: 75%;
 } */
-
-
 
 form                                  
 {
@@ -463,13 +567,41 @@ h6:hover                                                       /* links flyover 
    /* align-items: right; */
 }
 
+#mail
+{
+   font-size: large;
+   font-weight: oblique;
+   font-weight: bold;
+   text-decoration: none;
+   color: rgb(69, 54, 122);
+   text-shadow: 1px 1px 1px black;
+   position: absolute;
+   right: 1px;
+   margin-right: auto;
+   /* bottom: -500px; */
+   /* margin: auto; 
+   /* text-align: right;
+   /* height: 5px;
+   /* border: 1px solid #2b2c55;
+   /* border-radius: 5px;
+   /* font-size: 1.2em;
+   /* padding: 10px 10px 10px 10px; 
+   /* color: white; 
+   /* text-align: right;
+   /* margin-top: 80px;
+   /* clear: right; 
+   /* width: 15%; 
+   /* align-items: right; */
+}
+
+
 /* mark
 {
                                     
    background-color: #F0F2F4;                                 backgroud color take step on all the page
 }
 
-.float1
+.floatQbat
 {
    float: right;
    margin: auto;
@@ -479,15 +611,6 @@ h6:hover                                                       /* links flyover 
 .float2
 {
    float: center;
-}
-
-strong
-{
-   color :brown;
-   font-style: italic;
-   text-align: center;
-   text-shadow: 1px 1px 1px black;
-   clear: both;
 }
 
 element
