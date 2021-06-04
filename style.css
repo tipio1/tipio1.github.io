@@ -104,18 +104,21 @@ header
 
 .navElement
 {
-   width: 1200px;                                             
-   height: 100px;
+   width: 700px;                                             
+   height: 30px;
    font-weight: oblique;
    font-size: small;
    text-align: right;
-   margin: right;
-   padding: 10px;                                             /* marging interior 12px */
-   padding-bottom: 15px;
-   /* display: flex; */                                       /* search to align "nav.Element's block" on one line */
+   /* margin: right; */
+   /* padding: 10px; */                                          /* marging interior 12px */
+   /* padding-bottom: 10px; */
+   list-style-type: none;
+   display: flex;                                    /* search to align "nav.Element's block" on one line */
    position: absolute;                                   /* don't want "nav.Element's block" moove with the navigation in the page */
-   /* float: left;
+   left: 450px;
+   top: 170px;
    border: 1px solid black;
+   /* float: left;
    text-shadow: 0.5px 0.5px 0.5px black;
    background-color: rgba(243, 235, 235, 0.8);
    box-shadow: 1px 1px 1px black inset;
