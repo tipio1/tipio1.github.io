@@ -104,7 +104,7 @@ header
 
 .navElement
 {
-   width: 700px;                                             
+   width: 900px;                                             
    height: 30px;
    font-weight: oblique;
    font-size: small;
@@ -115,16 +115,20 @@ header
    list-style-type: none;
    display: flex;                                    /* search to align "nav.Element's block" on one line */
    position: absolute;                                   /* don't want "nav.Element's block" moove with the navigation in the page */
-   left: 450px;
-   top: 170px;
-   border: 1px solid black;
-   /* float: left;
+   left: 300px;
+   top: 160px;
+   /* border: 1px solid black;
+   float: left;
    text-shadow: 0.5px 0.5px 0.5px black;
    background-color: rgba(243, 235, 235, 0.8);
    box-shadow: 1px 1px 1px black inset;
    margin-left: auto; */
 }
 
+.navElement>div
+{
+   margin: 12px;;
+}
 
 /* section */
 div
@@ -330,16 +334,17 @@ h5
 td, th                                    /* Make a border on the td and the th */
 {
    border: 1px solid rgb(247, 243, 243);
-   
+   width: 40px;
+   height: 40px;
+   max-width: 40px;
+   max-height: 40px;
 }
 
-.element>div {
+.symbol>div {
    border: 1px solid rgb(0, 0, 0);
    text-align: center;
    padding-right: 0.5px;
    padding-left: 0.5px;
-   /* width: 40%;
-   height: 40%; */
 }
 
 .element_name
@@ -352,12 +357,12 @@ td, th                                    /* Make a border on the td and the th 
    font-size: xx-small;
 }
 
-.symbol
+.chemical_symbol
 {
    font-size: large;
 }
 
-.symbol:hover 
+.chemical_symbol:hover 
 {
    text-decoration: underline;
    color: rgb(0, 0, 0);
@@ -366,6 +371,24 @@ td, th                                    /* Make a border on the td and the th 
 .atomic_mass
 {
    font-size: xx-small;
+}
+
+.primordial
+{
+   border: 1px;
+   border-style: solid;
+}
+
+.Synthetic_element
+{
+   border: 1px;
+   border-style: dashed;
+}
+
+.Radioactivity
+{
+   border: 1px;
+   border-style: dotted;
 }
 
 .other_non_metals

@@ -15,12 +15,20 @@
                     <div id="logo">
                         <img src="images/laptop.jpg" alt="laptop" />
                         <em>This is environment of <br> my TAI training</em>
-                        <nav class=navElement>
-                                <a href="index.html"> "Home"   </a>
-                                <a href="career.html"> Professional Career since 2000 </a>
-                                <a href="tips.html"> Give your tips</a>
-                                <a href="tableOfElements.html"> Realisation of an Periodic Table of Elements</a>
-                        </nav>
+                            <nav class=navElement>
+                                <div class="home">
+                                    <a href="index.html">Home</a>
+                                </div>
+                                <div class="pro">
+                                    <a href="career.html"> Professional Career since 2000 </a>
+                                </div>
+                                <div class="tips">
+                                    <a href="tips.html"> Give your tips</a>
+                                </div>
+                                <div class="Realisation">
+                                    <a href="tableOfElements.html"> Realisation of an Periodic Table of Elements</a>
+                                </div>
+                            </nav>
                         <h1 class="titre"><strong> You are Welcome !</strong>
                     </div>
                 </header>
@@ -49,10 +57,10 @@
                     <table class="ElementTable">
                         <caption>Realisation of an Periodic Table of Elements</caption>
                         <tr>
-                            <td class="element other_non_metals primordial gaz">
+                            <td class="symbol other_non_metals primordial gaz">
                                 <div class="element_name">Hydrogen</div>
                                 <div class="atomic_number">4</div>
-                                <div class="symbol">H</div>
+                                <div class="chemical_symbol">H</div>
                                 <div class="atomic_mass">1,0</div>
                             </td>     <!-- how to color the text inside cell better? -->
                             <td colspan="16"></td>
@@ -121,10 +129,25 @@
                             <td class="noble_gases">Xe</td>
                         </tr>
                         <tr>
-                            <td class="alkaline">Cs</td>
-                            <td class="alkaline_earth">Ba</td>
-                            <td class="lanthanides" height="50" width="50">*</td>
-                            <td class="transition_metals">Hf</td>
+                            <td class="symbol alkaline primordial solide">
+                                <div class="element_name">Cesium</div>
+                                <div class="atomic_number">55</div>
+                                <div class="chemical_symbol">Cs</div>
+                                <div class="atomic_mass">132,9</div>
+                            </td>
+                            <td class="symbol alkaline_earth primordial solide">
+                                <div class="element_name">Barium</div>
+                                <div class="atomic_number">56</div>
+                                <div class="chemical_symbol">Ba</div>
+                                <div class="atomic_mass">137,3</div>
+                            </td>
+                            <td class="lanthanides">*</td>
+                            <td class="symbol transition_metals primordial solide">
+                                <div class="element_name">Hafnium</div>
+                                <div class="atomic_number">72</div>
+                                <div class="chemical_symbol">Hf</div>
+                                <div class="atomic_mass">178,4</div>
+                            </td>
                             <td class="transition_metals">Ta</td>
                             <td class="transition_metals">W</td>
                             <td class="transition_metals">Re</td>
@@ -132,10 +155,10 @@
                             <td class="transition_metals">Ir</td>
                             <td class="transition_metals">Pt</td>
                             <td class="transition_metals">Au</td>
-                            <td class="element poor_metals primordial liquide" >
+                            <td class="symbol poor_metals primordial liquide">
                                 <div class="element_name">Mercure</div>
                                 <div class="atomic_number">80</div>
-                                <div class="symbol">Hg</div>
+                                <div class="chemical_symbol">Hg</div>
                                 <div class="atomic_mass">200,5</div>
                             </td>
                             <td class="poor_metals">Ti</td>
@@ -149,7 +172,12 @@
                             <td class="alkaline">Fr</td>
                             <td class="alkaline_earth">Ra</td>
                             <td class="actinides">**</td>
-                            <td class="transition_metals">Rf</td>
+                            <td class="symbol transition_metals Synthetic_element solide">
+                                <div class="element_name">Rutherfordium</div>
+                                <div class="atomic_number">104</div>
+                                <div class="chemical_symbol">Rf</div>
+                                <div class="atomic_mass">[267]</div>
+                            </td>
                             <td class="transition_metals">Db</td>
                             <td class="transition_metals">Sg</td>
                             <td class="transition_metals">Bh</td>
@@ -185,7 +213,12 @@
                         </tr>
                         <tr>
                             <td colspan="3">**89-103</td>
-                            <td class="actinides">Ac</td>
+                            <td class="symbol actinides Radioactivity solide">
+                                <div class="element_name">Actinium</div>
+                                <div class="atomic_number">89</div>
+                                <div class="chemical_symbol">Ac</div>
+                                <div class="atomic_mass">[227]</div>
+                            </td>
                             <td class="actinides">Th</td>
                             <td class="actinides">Pa</td>
                             <td class="actinides">U</td>
