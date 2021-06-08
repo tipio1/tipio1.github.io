@@ -382,13 +382,13 @@ td, th                                    /* Make a border on the td and the th 
 .Synthetic_element
 {
    border: 1px;
-   border-style: dashed;
+   border-style: dotted;
 }
 
-.Radioactivity
+.Radioactivity 
 {
    border: 1px;
-   border-style: dotted;
+   border-style: dashed;
 }
 
 .other_non_metals
@@ -449,11 +449,13 @@ td, th                                    /* Make a border on the td and the th 
 .gaz
 {
    color:rgb(255, 0, 0);
+   border-color: rgb(0, 0, 0);
 }
 
 .liquide
 {
    color:rgb(4, 0, 255);
+   border-color: rgb(0, 0, 0);
 }
 
 .atomic_mass
