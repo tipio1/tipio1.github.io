@@ -333,11 +333,27 @@ h5
 
 td, th                                    /* Make a border on the td and the th */
 {
+   opacity: 0.8;
    border: 1px solid rgb(247, 243, 243);
    width: 40px;
    height: 40px;
    max-width: 40px;
    max-height: 40px;
+}
+
+/* tr
+{
+   border: black;
+}*/
+
+tr:hover td
+{
+   opacity: 0.5;
+}
+
+td:hover 
+{
+   opacity: 1 !important;  
 }
 
 .symbol>div {
@@ -362,7 +378,7 @@ td, th                                    /* Make a border on the td and the th 
    font-size: large;
 }
 
-.chemical_symbol:hover 
+td:hover .chemical_symbol 
 {
    text-decoration: underline;
    color: rgb(0, 0, 0);
