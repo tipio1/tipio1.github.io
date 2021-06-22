@@ -102,6 +102,13 @@ header
    height: 150px;
 }
 
+.scrollingTitle{
+   width: 5px;
+   height: 5px;
+   border: black;
+   margin: 1%;
+}
+
 .navElement
 {
    width: 900px;                                             
