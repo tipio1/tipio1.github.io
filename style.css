@@ -102,16 +102,31 @@ header
    height: 150px;
 }
 
-.scrollingTitle{
+.scrollingTitle
+{
    width: 5px;
    height: 5px;
    border: black;
    margin: 1%;
+   position: absolute;                            
+   left: 10px;
+   top: 200px;
+}
+
+.scrollingTitleGame
+{
+   width: 5px;
+   height: 5px;
+   border: black;
+   margin: 1%;                                
+   position: absolute;                            
+   left: 1200px;
+   top: 200px;
 }
 
 .navElement
 {
-   width: 900px;                                             
+   width: 1200px;                                             
    height: 30px;
    font-weight: oblique;
    font-size: small;
@@ -122,7 +137,7 @@ header
    list-style-type: none;
    display: flex;                                    /* search to align "nav.Element's block" on one line */
    position: absolute;                                   /* don't want "nav.Element's block" moove with the navigation in the page */
-   left: 300px;
+   left: 250px;
    top: 160px;
    /* border: 1px solid black;
    float: left;
@@ -134,7 +149,7 @@ header
 
 .navElement>div
 {
-   margin: 12px;;
+   margin: 8px;;
 }
 
 /* section */
@@ -159,6 +174,20 @@ p
    margin: auto;
    padding: 10px;
    word-wrap: break-word;  
+}
+
+.game
+{
+   background-color: rgba(255, 255, 255, 0.75);;
+   font-weight: oblique;
+   border: 1px solid black;
+   text-align: center;
+   width: 1000px;
+   height: 350px;
+   margin: auto;
+   padding: 2px;
+   border:1px 1px 1px black;
+   border-radius: 20%;
 }
 
 .cv
@@ -325,6 +354,19 @@ h5
 }
 
 /* Element table => dénormalisation : repeat the things / normalisation : keep the system more easy-DRY : don't repeat yourself => attention whit that! */
+/* .game
+{
+   margin: auto;
+   margin-left: 25px;
+   font-family: sans-serif;
+   text-align: center;
+   background-color: rgba(99, 97, 97, 0.6);
+   border-collapse: separate;   
+   border-radius: 15px;
+   border: 1px solid black;
+   width: 95%; 
+}*/
+
 .ElementTable
 {
    margin: auto;
@@ -545,6 +587,23 @@ footer
    border-radius: 5px;
    box-shadow: 1px 2px 2px black;
    /* clear: none; */
+}
+
+h5
+{
+   color: rgb(8, 191, 247);
+   font-style: oblique;
+   text-decoration: blink;
+   text-align: center;
+   font-size: x-large;
+   margin: 0%;
+   /* padding: 5px;*/
+}
+   
+h5:hover                                                       /* links flyover aparance */
+{
+   text-decoration: underline;
+   color: rgb(10, 91, 184);
 }
 
 h6

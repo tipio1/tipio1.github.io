@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+   
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="style.css" />
+        <link rel="stylesheet" media="screen and (max-width: 800px)" href="style800px.css" />
+        <title>Tipio</title>
+        <script>
+            str="Your turn to play !!";
+            i=0;
+            dir="D";
+            function titleGame(){
+                t=setTimeout("titleGame()", 100);
+                document.fo.tabletitle.value=str.substring(0,i);
+                if(dir == "D"){
+                    if(i<str.length)
+                        i++;
+                    else
+                        dir="G";
+                }
+                if(dir == "G"){
+                    if(i>0)
+                        i--;
+                    else
+                        dir="D";
+                }
+            }
+        </script>
+    </head>
+
+    <body onload="titleGame()">
+        <div id="main_wrapper">
+            <div class="header"></div>
+                <header>
+                    <div id="logo">
+                        <img src="images/laptop.jpg" alt="laptop" />
+                        <em>This is environment of <br> my TAI training</em>
+                            <nav class=navElement>
+                                <div class="home">
+                                    <a href="index.html">Home</a>
+                                </div>
+                                <div class="pro">
+                                    <a href="career.html"> Professional Career since 2000 </a>
+                                </div>
+                                <div class="tips">
+                                    <a href="tips.html"> Give your tips</a>
+                                </div>
+                                <div class="realisation">
+                                    <a href="tableOfElements.html"> Realisation of an Periodic Table of Elements</a>
+                                </div>
+                                <div class="play">
+                                    <a href="GuessTheNumber.html"> Your turn</a>
+                                </div>
+                            </nav>
+                        <h1 class="titre"><strong> You are Welcome !</strong>
+                    </div>
+                </header>
+            </div>
+   <br>
+        </div>
+        <div class="section">
+            <!-- <div class="aside">
+                <aside>
+                    <br><figcaption class="aside"><em>In Run</em></figcaption><br>
+                        <ul>
+                            <li>TAI Training</li>
+                            <li>TAI Stage</li>
+                        </ul>
+                    <div id="banner_button">
+                    <div id="banner_button">
+                        <a href="https://github.com/tipio1" target="_blank" class="button"><img src="images/info.png" alt="info" height="50" width="50"  /></a>
+                    </div>
+                </aside> 
+            </div> -->
+            <div class="article">  
+                <article>  
+                    <br>
+                    <br>
+                    <form class="scrollingTitleGame" name="fo">
+                        <input type="text" name="tabletitle" size="20" />
+                    </form>
+                    <br>
+                    <br>
+                    <div class="game">
+                        <br>
+                        <h5>Discovery and realisation of an game basic with JavaScript</h5>
+                        <br>
+                            We have selected a random number between 1 and 100. See if you can 
+                            guess it in 10 turns or fewer. We'll tell you if your guess was too 
+                            high or too low.
+                        <br>
+                        <div class="formul">
+                            <label for="guessField">Enter a guess: </label>
+                            <input type="text" id="guessField" class="guessField">
+                            <input type="submit" value="Submit guess" class="guessSubmit">
+                        </div>
+                        <div class="resultParas">
+                            <div class="guesses"></div>
+                            <div class="lastResult"></div>
+                            <div class="lowOrHi"></div>
+                        </div>
+                    </div>
+                    <br>
+                    <br>
+                    <br>
+                </article>
+            </div>
+        </section>
+   <br>
+        <div class="footer">
+            <footer>
+                <h6>Coming Soon</h6>
+                <div id="mail">
+                    <a href="mailto:tipioone@gmail.com" target="_blank" class="mail"><img src="images/msg.png" alt="mail" height="50" width="50"/></a>
+                 </div>
+                <div id="infinity">
+                    <a href="index.html" class="infinity"><img src="images/infinity.png" alt="info" height="50" width="50"/></a>
+                </div>
+            </footer>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
