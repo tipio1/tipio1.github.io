@@ -6,27 +6,6 @@
         <link rel="stylesheet" href="style.css" />
         <link rel="stylesheet" media="screen and (max-width: 800px)" href="style800px.css" />
         <title>Tipio</title>
-        <script>
-            str="Your turn to play !!";
-            i=0;
-            dir="D";
-            function titleGame(){
-                t=setTimeout("titleGame()", 100);
-                document.fo.tabletitle.value=str.substring(0,i);
-                if(dir == "D"){
-                    if(i<str.length)
-                        i++;
-                    else
-                        dir="G";
-                }
-                if(dir == "G"){
-                    if(i>0)
-                        i--;
-                    else
-                        dir="D";
-                }
-            }
-        </script>
     </head>
 
     <body onload="titleGame()">
@@ -94,11 +73,11 @@
                             <label for="guessField">Enter a guess: </label>
                             <input type="text" id="guessField" class="guessField">
                             <input type="submit" value="Submit guess" class="guessSubmit">
-                        </div>
+                        </div><br>
                         <div class="resultParas">
-                            <div class="guesses"></div>
-                            <div class="lastResult"></div>
-                            <div class="lowOrHi"></div>
+                            <p class="guesses"></p><br>
+                            <p class="lastResult"></p><br>
+                            <p class="lowOrHi"></p><br>
                         </div>
                     </div>
                     <br>

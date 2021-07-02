@@ -176,6 +176,20 @@ p
    word-wrap: break-word;  
 }
 
+.guesses, .lastResult, .lowOrHi
+{
+   /* background-color: #d3d3d3; */
+   font-weight: oblique;
+   border: 1px solid black;
+   /* box-shadow: 1px 1px 1px black inset; */
+   text-align: center;
+   /* width: 700px; */
+   height: 8px;
+   width: 60%;
+   margin: auto;
+   padding: 10px;
+   word-wrap: break-word;  
+}
 .game
 {
    background-color: rgba(255, 255, 255, 0.75);;
@@ -183,7 +197,7 @@ p
    border: 1px solid black;
    text-align: center;
    width: 1000px;
-   height: 350px;
+   height: 450px;
    margin: auto;
    padding: 2px;
    border:1px 1px 1px black;
@@ -293,7 +307,7 @@ ul
    text-shadow: 0.5px 0.5px 0.5px black;
 }
 
-.button
+.buttonOne
 {
    font-size: large;
    font-weight: oblique;
