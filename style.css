@@ -2,6 +2,9 @@
 ---------
 write by Ben.R */
 
+/* Element table => dénormalisation : repeat the things / normalisation : keep the system more easy-DRY : 
+don't repeat yourself => attention whit that! */
+
 /* Principals page elements */
 *
 {
@@ -16,11 +19,11 @@ write by Ben.R */
 
 body
 {
-   background: url('images/blocknetwork.jpg');           /* or : background-color: rgba(243, 235, 235, 0.8);*/
+   background: url('images/blocknetwork.jpg');                   /* or : background-color: rgba(243, 235, 235, 0.8);*/
    background-size: cover;
    /* color: #181818; */
    background-repeat: no-repeat;
-   background-position: top;                             /* image start position */
+   background-position: top;                                     /* image start position */
    position: absolute;
    width: 99%;
    height: 100%;
@@ -28,11 +31,11 @@ body
 
 .whiteBG
 {
-   background: rgba(243, 235, 235, 0.8);            /* or : background-color: url('images/blocknetwork.jpg');*/
+   background: rgba(243, 235, 235, 0.8);                       /* or : background-color: url('images/blocknetwork.jpg');*/
    /* background-size: cover;
    /* color: #181818;
    background-repeat: no-repeat;
-   background-position: top;*/                             /* image start position */
+   background-position: top;*/                                   /* image start position */
    /* position: absolute; 
    width: 99%;
    height: 100%; */
@@ -41,8 +44,7 @@ body
 /* Header */
 header
 {
-   background: rgba(240, 241, 241, 0.85);             /* or : url('images/banner.jpg') repeat-x bottom;  */
-   /* display: flex; */
+   background: rgba(240, 241, 241, 0.85);                      /* or : url('images/banner.jpg') repeat-x bottom;  */
    justify-content: space-between;
    align-items: flex-end;
    color: #221b1c;
@@ -67,10 +69,10 @@ header
    clear: both;
    width: 15%;
    align-items: right;
-   /* text-transform: lowercase;                       or : uppercase; for majusculs */
+                                                                  /* text-transform: lowercase; or : uppercase; for majusculs */
 }
 
-.titre:hover                                           /* links flyover aparance */
+.titre:hover                                                      /* links flyover aparance */
 {
    text-decoration: underline;
    color: orange; 
@@ -81,7 +83,7 @@ header
    font-size: x-large;
    font-weight: oblique;
    font-weight: bold;
-   color: rgb(69, 54, 122);
+   color: rgb(255, 153, 0);                                       /* rgb(69, 54, 122); */
    text-align: left;
    margin-top: -60px;
    text-shadow: 1px 1px 1px black;
@@ -102,43 +104,62 @@ header
    height: 150px;
 }
 
-.scrollingTitle
+/* section */
+nav
 {
-   width: 5px;
-   height: 5px;
-   border: black;
-   margin: 1%;
-   position: absolute;                            
-   left: 10px;
-   top: 200px;
+   position: fixed;
+   float: left;
+   width: 220px;
+   font-weight: oblique;
+   text-align: left;
+   text-shadow: 0.5px 0.5px 0.5px black;
+   /* background-color: rgba(243, 235, 235, 0.8);
+   border: 1px solid black;
+   box-shadow: 1px 1px 1px black inset; */
+   height: 300px;
+   margin: left;  
+   padding: 10px;                                                /* marging interior 12px */
 }
 
-.scrollingTitleGame
+aside
 {
-   width: 5px;
-   height: 5px;
-   border: black;
-   margin: 1%;                                
-   position: absolute;                            
-   left: 1200px;
-   top: 200px;
+   background: url('images/music.jpg') repeat-x top ;            /* or : rgba(240, 241, 241, 0.85); */
+   justify-content: space-between;
+   align-items: flex-end;
+   color: #221b1c;
+   border-bottom: 1px solid #221b1c;
+   width: 100%;
+   box-shadow: 1px 2px 2px black;
+   clear: both;
+   float: right;
+   font-weight: oblique;
+   text-align: center; 
+   /* background-color: rgba(255, 255, 255, 0.8); 
+   border: 1px solid rgb(8, 245, 8);
+   box-shadow: 1px 1px 1px rgb(182, 13, 13) inset;
+   display: flex;  */
+   width: 250px;
+   height: 500px;
+   border-radius: 5px;
+   margin-right: 30px;
+   padding: 0px;                                                 /* marging interior 12px */
 }
 
 .navElement
 {
-   width: 1200px;                                             
+   width: 1000px;                                             
    height: 30px;
    font-weight: oblique;
    font-size: small;
    text-align: right;
    /* margin: right; */
-   /* padding: 10px; */                                          /* marging interior 12px */
+   /* padding: 10px; */                                           /* marging interior 12px */
    /* padding-bottom: 10px; */
    list-style-type: none;
-   display: flex;                                    /* search to align "nav.Element's block" on one line */
-   position: absolute;                                   /* don't want "nav.Element's block" moove with the navigation in the page */
+   display: flex;                                                 /* search to align "nav.Element's block" on one line */
+   position: absolute;                                            /* don't want "nav.Element's block" moove with the navigation in the page */
    left: 250px;
-   top: 160px;
+   top: 100px;
    /* border: 1px solid black;
    float: left;
    text-shadow: 0.5px 0.5px 0.5px black;
@@ -152,7 +173,6 @@ header
    margin: 8px;;
 }
 
-/* section */
 div
 {
    font-size: large;
@@ -176,12 +196,43 @@ p
    word-wrap: break-word;  
 }
 
-.guesses, .lastResult, .lowOrHi
+.cv
 {
    /* background-color: #d3d3d3; */
    font-weight: oblique;
    border: 1px solid black;
-   /* box-shadow: 1px 1px 1px black inset; */
+   box-shadow: 1px 1px 1px black inset;
+   border-radius: 25%;
+   text-align: center;
+   /* width: 700px; */
+   height: 500px;
+   width: 70%;
+   margin-left: 40px;
+   padding: 10px;
+   word-wrap: break-word;  
+}
+
+strong
+{
+   color :rgb(8, 191, 247);
+   font-style: italic;
+   text-align: center;
+   text-shadow: 1px 1px 1px black;
+   clear: both;
+}
+
+strong:hover
+{
+      text-decoration: underline;
+      color: rgb(10, 91, 184);
+}
+
+.guesses, .lastResult, .lowOrHi
+{
+   /* background-color: #d3d3d3; */
+   font-weight: oblique;
+   /* border: 1px solid black; */
+   box-shadow: 1px 1px 1px black inset;
    text-align: center;
    /* width: 700px; */
    height: 8px;
@@ -190,6 +241,7 @@ p
    padding: 10px;
    word-wrap: break-word;  
 }
+
 .game
 {
    background-color: rgba(255, 255, 255, 0.75);;
@@ -204,19 +256,44 @@ p
    border-radius: 20%;
 }
 
-.cv
+
+h5                                                               /* game title */
 {
-   /* background-color: #d3d3d3; */
-   font-weight: oblique;
-   border: 1px solid black;
-   /* box-shadow: 1px 1px 1px black inset; */
+   color: rgb(8, 191, 247);
+   font-style: oblique;
+   text-decoration: blink;
    text-align: center;
-   /* width: 700px; */
-   height: 500px;
-   width: 60%;
-   margin: auto;
-   padding: 10px;
-   word-wrap: break-word;  
+   font-size: x-large;
+   margin: 0%;
+   /* padding: 5px;*/
+}
+   
+h5:hover                                                         /* links flyover aparance */
+{
+   text-decoration: underline;
+   color: rgb(10, 91, 184);
+}
+
+.scrollingTitle                                                  /* js titles */
+{
+   width: 5px;
+   height: 5px;
+   border: black;
+   margin: 1%;
+   position: absolute;                            
+   left: 10px;
+   top: 200px;
+}
+
+.scrollingTitleGame                                              /* js titles */
+{
+   width: 5px;
+   height: 5px;
+   border: black;
+   margin: 1%;                                
+   position: absolute;                            
+   left: 1200px;
+   top: 200px;
 }
 
 .qbat
@@ -224,12 +301,14 @@ p
    background-color: rgba(255, 255, 255, 0.85);
    font-weight: oblique;
    border: 1px solid black;
-   /* box-shadow: 1px 1px 1px black inset; */
-   text-align: left;
+   border-radius: 20px;
+   box-shadow: 1px 1px 2px black inset;
+   border-radius: 25%;
+   text-align: auto;
    /* width: 700px; */
-   height: 350px;
-   width: 60%;
-   margin: auto;
+   height: 450px;
+   width: 72%;
+   margin-left: 40px;
    padding: 10px;
    word-wrap: break-word;   
 }
@@ -239,69 +318,23 @@ p
    float: right;
    /* margin: auto; */
    border: 1px black outset;
+   border-radius: 5%;
+   margin-top: 80px;
+   margin-right: 25px;
 }
 
-.qbatTittle                               /* why does not work for center ?*/
+.qbatTittle                                                       /* why does not work for center ?*/
 {
    color :brown;
    font-style: italic;
-   text-align: center;
-   text-shadow: 1px 1px 1px black;
-   clear: both;
-}
-
-/* strong
-{
-   color :brown;
-   font-style: italic;
-   text-align: center;
-   text-shadow: 1px 1px 1px black;
-   clear: both;
-}*/
-
-nav
-{
-   position: fixed;
-   float: left;
-   width: 220px;
-   font-weight: oblique;
    text-align: left;
-   text-shadow: 0.5px 0.5px 0.5px black;
-   /* background-color: rgba(243, 235, 235, 0.8);
-   border: 1px solid black;
-   box-shadow: 1px 1px 1px black inset; */
-   height: 300px;
-   margin: left;
-   padding: 10px;                                             /* marging interior 12px */
-}
-
-aside
-{
-   background: url('images/music.jpg') repeat-x top ;         /* or : rgba(240, 241, 241, 0.85); */
-   justify-content: space-between;
-   align-items: flex-end;
-   color: #221b1c;
-   border-bottom: 1px solid #221b1c;
-   width: 100%;
-   box-shadow: 1px 2px 2px black;
+   text-shadow: 1px 1px 1px black;
    clear: both;
-   float: right;
-   font-weight: oblique;
-   text-align: center; 
-   /* background-color: rgba(255, 255, 255, 0.8); 
-   border: 1px solid rgb(8, 245, 8);
-   box-shadow: 1px 1px 1px rgb(182, 13, 13) inset;
-   display: flex;  */
-   width: 250px;
-   height: 500px;
-   border-radius: 5px;
-   margin: left;
-   padding: 0px;                                              /* marging interior 12px */
 }
 
 ul
 {
-   color: rgb(62, 63, 104);
+   color: rgb(255, 153, 0);                                                /*rgb(62, 63, 104);*/
    font-style: italic;
    text-align: left;
    text-shadow: 0.5px 0.5px 0.5px black;
@@ -316,7 +349,7 @@ ul
    color: rgb(69, 54, 122);
    text-shadow: 1px 1px 1px black;
    position: absolute;
-   right: 1px;
+   right: 20px;
    bottom: 120px;
    /* margin: auto; 
    /* text-align: right;
@@ -333,20 +366,6 @@ ul
    /* align-items: right; */
 }
 
-/* #banner_button
-{
-   position: absolute;
-   bottom: 0;
-   border-radius: 5px;
-   width: 20%;
-   height: 25px;
-   padding-top: 15px;
-   padding-left: 5px;
-   background-color: rgba(196, 182, 182, 0.8);
-   /* color: white; 
-   font-size: 0.8em;
-} */
-
 h5
 {
    font-weight: oblique;
@@ -357,30 +376,17 @@ h5
 .LastSessions
 {
    margin: auto;
-   margin-left: 280px;
+   margin-left: 80px;
    font-family: sans-serif;
    text-align: center;
    background-color: rgba(99, 97, 97, 0.6);
-   border-collapse: separate;             /* or : collapse */
+   border-collapse: separate;                                        /* or : collapse */
    border-radius: 15px;
    border: 1px solid black;
-   width: 60%;
+   width: 85%;
 }
 
-/* Element table => dénormalisation : repeat the things / normalisation : keep the system more easy-DRY : don't repeat yourself => attention whit that! */
-/* .game
-{
-   margin: auto;
-   margin-left: 25px;
-   font-family: sans-serif;
-   text-align: center;
-   background-color: rgba(99, 97, 97, 0.6);
-   border-collapse: separate;   
-   border-radius: 15px;
-   border: 1px solid black;
-   width: 95%; 
-}*/
-
+/* elementTable */
 .ElementTable
 {
    margin: auto;
@@ -388,13 +394,13 @@ h5
    font-family: sans-serif;
    text-align: center;
    /* background-color: rgba(99, 97, 97, 0.6); */
-   border-collapse: separate;             /* or : collapse */
+   border-collapse: separate;                                 
    border-radius: 15px;
    border: 1px solid black;
    width: 95%;
 }
 
-td, th                                    /* Make a border on the td and the th */
+td, th                                                               /* Make a border on the td and the th */
 {
    opacity: 0.8;
    border: 1px solid rgb(247, 243, 243);
@@ -403,11 +409,6 @@ td, th                                    /* Make a border on the td and the th 
    max-width: 40px;
    max-height: 40px;
 }
-
-/* tr
-{
-   border: black;
-}*/
 
 tr:hover td
 {
@@ -543,7 +544,7 @@ td:hover .chemical_symbol
 }
 
 
-                                                                  /* 
+                                                                     /* 
                                                                      red : alkaline
                                                                      beige : alkaline_earth
                                                                      light pink : lanthanides
@@ -555,20 +556,7 @@ td:hover .chemical_symbol
                                                                      yellow : halogen
                                                                      blue : noble_gases
                                                                      light grey/white : unclassified_items
-                                                                  */
-
-/* table
-{
-   margin: auto;
-   margin-left: 300px;
-   font-family: sans-serif;
-   text-align: center;
-   /* background-color: rgba(99, 97, 97, 0.6); 
-   border-collapse: separate;             /* or : collapse 
-   border-radius: 15px;
-   border: 1px solid black;
-   width: 75%;
-} */
+                                                                     */
 
 form                                  
 {
@@ -585,10 +573,9 @@ form
 }
 
 /* Footer */
-
 footer
 {
-   background: url('images/banner.jpg') repeat-x bottom;                 /* or : rgba(218, 224, 224, 0.85); */
+   background: rgba(254, 255, 255, 0.85);                            /* or : url('images/banner.jpg') repeat-x bottom; */
    /* display: flex; */
    /* justify-content: space-between;
    align-items: flex-end;
@@ -603,23 +590,6 @@ footer
    /* clear: none; */
 }
 
-h5
-{
-   color: rgb(8, 191, 247);
-   font-style: oblique;
-   text-decoration: blink;
-   text-align: center;
-   font-size: x-large;
-   margin: 0%;
-   /* padding: 5px;*/
-}
-   
-h5:hover                                                       /* links flyover aparance */
-{
-   text-decoration: underline;
-   color: rgb(10, 91, 184);
-}
-
 h6
 {
    color: green;
@@ -631,7 +601,7 @@ h6
    padding: 10px;
 }
    
-h6:hover                                                       /* links flyover aparance */
+h6:hover                                                                   /* links flyover aparance */
 {
    text-decoration: underline;
    color: orange;
@@ -719,10 +689,56 @@ h6:hover                                                       /* links flyover 
 }
 
 
-/* mark
+/* alternatif code
+
+table
 {
-                                    
-   background-color: #F0F2F4;                                 backgroud color take step on all the page
+   margin: auto;
+   margin-left: 300px;
+   font-family: sans-serif;
+   text-align: center;
+   /* background-color: rgba(99, 97, 97, 0.6); 
+   border-collapse: separate;             /* or : collapse 
+   border-radius: 15px;
+   border: 1px solid black;
+   width: 75%;
+}
+
+ .game
+{
+   margin: auto;
+   margin-left: 25px;
+   font-family: sans-serif;
+   text-align: center;
+   background-color: rgba(99, 97, 97, 0.6);
+   border-collapse: separate;   
+   border-radius: 15px;
+   border: 1px solid black;
+   width: 95%; 
+}
+
+tr
+{
+   border: black;
+}
+
+#banner_button
+{
+   position: absolute;
+   bottom: 0;
+   border-radius: 5px;
+   width: 20%;
+   height: 25px;
+   padding-top: 15px;
+   padding-left: 5px;
+   background-color: rgba(196, 182, 182, 0.8);
+   /* color: white; 
+   font-size: 0.8em;
+}
+
+mark
+{                                 
+   background-color: #F0F2F4;
 }
 
 .floatQbat
@@ -756,4 +772,5 @@ element
    color: rgb(61, 78, 60);
    font-size: large;
    text-align: center;
-} */
+} 
+*/
