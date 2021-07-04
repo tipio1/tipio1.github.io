@@ -3,7 +3,7 @@
   i=0;
   dir="D";
   function titleGame(){
-    t=setTimeout("titleGame()", 100);
+    t=setTimeout("titleGame()", 200);
     document.fo.tabletitle.value=str.substring(0,i);
   if(dir == "D"){
     if(i<str.length)
