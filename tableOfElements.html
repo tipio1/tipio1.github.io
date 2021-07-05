@@ -6,27 +6,6 @@
         <link rel="stylesheet" href="style.css" />
         <link rel="stylesheet" media="screen and (max-width: 800px)" href="style800px.css" />
         <title>Tipio</title>
-        <script>
-            str="Realisation of an Periodic Table of Elements";
-            i=0;
-            dir="D";
-            function titleElementTable(){
-                t=setTimeout("titleElementTable()", 100);
-                document.fo.tabletitle.value=str.substring(0,i);
-                if(dir == "D"){
-                    if(i<str.length)
-                        i++;
-                    else
-                        dir="G";
-                }
-                if(dir == "G"){
-                    if(i>0)
-                        i--;
-                    else
-                        dir="D";
-                }
-            }
-        </script>
     </head>
 
     <body onload="titleElementTable()">
@@ -75,15 +54,12 @@
             </div> -->
             <div class="article">  
                 <article>  
-                    <br>
-                    <br>
                     <form class="scrollingTitle" name="fo">
-                        <input type="text" name="tabletitle" size="40" />
+                        <input class="formScrolling" type="text" name="titleElement" size="60"/>
                     </form>
                     <br>
-                    <br>
                     <table class="ElementTable">
-                        <caption>Realisation of an Periodic Table of Elements</caption>
+                        <!--<caption>Realisation of an Periodic Table of Elements</caption>-->
                         <tr>
                             <td class="symbol other_non_metals primordial gaz">
                                 <div class="element_name">Hydrogen</div>
@@ -845,5 +821,6 @@
             </footer>
         </div>
     </div>
+    <script src="app.js"></script>
 </body>
 </html>

@@ -1,10 +1,40 @@
+/* app.js
+---------
+write by Ben.R 
+Js code for all html pages */
+
+
+// scrolling titleTableOfElement
+  ctr="Realisation of an Periodic Table of Elements";
+  i=0;
+  dir="D";
+  function titleElementTable(){
+    // let sleep = 0, temp_pause = 1000; //1 sec
+    t=setTimeout("titleElementTable()", 100);
+    document.fo.titleElement.value=ctr.substring(0,i);
+  if(dir == "D"){
+    if(i<ctr.length)
+      i++;
+    else
+      dir="G";
+    }
+    // setTimeOut(function(_titleElementTable) {sleep = 1;}, temp_pause = 400); /* don't continu to decrement, why ?*/
+  if(dir == "G"){
+    if(i>0)
+      i--;
+    else
+      dir="D";
+    } 
+  }
+  
+
 // scrolling titleGame
   str="Your turn to play !!";
   i=0;
   dir="D";
   function titleGame(){
     t=setTimeout("titleGame()", 200);
-    document.fo.tabletitle.value=str.substring(0,i);
+    document.fo.titleGame.value=str.substring(0,i);
   if(dir == "D"){
     if(i<str.length)
       i++;

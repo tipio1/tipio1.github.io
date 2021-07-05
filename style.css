@@ -274,24 +274,50 @@ h5:hover                                                         /* links flyove
 
 .scrollingTitle                                                  /* js titles */
 {
-   width: 5px;
-   height: 5px;
-   border: black;
-   margin: 1%;
-   position: absolute;                            
-   left: 10px;
-   top: 200px;
+   background-color: rgba(112, 112, 112, 0.2);
+   width: 520px;
+   height: 30px;
+   border-radius: 25px;
+   margin: auto;
+   box-shadow: 1px 1px 4px rgb(0, 0, 0) inset;
+   /* border: black;   
+   /* position: absolute;                         
+   left: 10%;
+   top: 200px; */
+}
+
+.formScrolling
+{
+   margin: 8px;
+   margin-top: 2px;
+   border-radius: 15px;
+   box-shadow: 1px 1px 1px rgb(0, 0, 0) inset;
+   text-align: center;
+   font-size: large;
+   font-style: oblique;
+   color: rgb(10, 91, 184);
 }
 
 .scrollingTitleGame                                              /* js titles */
 {
-   width: 5px;
-   height: 5px;
-   border: black;
-   margin: 1%;                                
-   position: absolute;                            
-   left: 1200px;
-   top: 200px;
+   background-color: rgba(112, 112, 112, 0.2);
+   width: 195px;
+   height: 30px;
+   border-radius: 25px;
+   margin: auto;
+   box-shadow: 1px 1px 4px rgb(0, 0, 0) inset;
+}
+
+.gameScrolling
+{
+   margin: 6px;
+   margin-top: 2px;
+   border-radius: 15px;
+   box-shadow: 1px 1px 1px rgb(0, 0, 0) inset;
+   text-align: center;
+   font-size: large;
+   font-style: oblique;
+   color: rgb(10, 91, 184);
 }
 
 .qbat
