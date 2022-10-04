@@ -643,7 +643,8 @@ h6:hover                                                                   /* li
    font-weight: oblique;
    font-weight: bold;
    text-decoration: none;
-   color: rgb(69, 54, 122);
+   color :rgb(8, 191, 247);
+   /* color: rgb(69, 54, 122); */
    text-shadow: 1px 1px 1px black;
    margin-left: auto;
    /* position: absolute; */
