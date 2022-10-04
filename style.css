@@ -82,11 +82,15 @@ header
 
  em
 {
+   color :rgb(8, 191, 247);
+   font-style: italic;
+   text-align: left;
+   text-shadow: 1px 1px 1px black;
+   clear: both;
    font-size: x-large;
    font-weight: oblique;
    font-weight: bold;
-   color: rgb(255, 153, 0);                                       /* rgb(69, 54, 122); */
-   text-align: left;
+   /* color: rgb(255, 153, 0);                                       rgb(69, 54, 122); */
    margin-top: -60px;
    text-shadow: 1px 1px 1px black;
    clear: both;
@@ -598,7 +602,7 @@ form
    border: 1px solid black;
 }
 
-/* Footer */
+Footer
 footer
 {
    background: rgba(254, 255, 255, 0.85);                            /* or : url('images/banner.jpg') repeat-x bottom; */
