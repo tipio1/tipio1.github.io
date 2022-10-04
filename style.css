@@ -672,7 +672,7 @@ h6:hover                                                                   /* li
    text-decoration: none;
    color :rgb(8, 191, 247);
    /* color: rgb(69, 54, 122); */
-   text-shadow: 1px 1px 1px black;
+   /* text-shadow: 1px 1px 1px black; */
    position: absolute;
    right: 1px;
    margin-right: auto;
