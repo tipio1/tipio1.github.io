@@ -61,7 +61,8 @@ header
    /* display: right;
    flex-direction: column;
    border: 1px black outset; */
-   color: rgb(69, 54, 122);
+   color :rgb(8, 191, 247);
+   /* color: rgb(69, 54, 122); */
    font-size: x-large;
    font-weight: oblique;
    font-weight: bold;
@@ -376,7 +377,8 @@ ul
    font-weight: oblique;
    font-weight: bold;
    text-decoration: none;
-   color: rgb(69, 54, 122);
+   color :rgb(8, 191, 247);
+   /* color: rgb(69, 54, 122); */
    text-shadow: 1px 1px 1px black;
    position: absolute;
    right: 20px;
