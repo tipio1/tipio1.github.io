@@ -20,7 +20,7 @@ don't repeat yourself => attention whit that! */
 body
 {
    /* background: url('images/blueandblackwallpapers.jpg');                   or : background-color: rgba(243, 235, 235, 0.8); */
-   background-color: rgba(36, 33, 33, 0.8);
+   /* background-color: rgba(36, 33, 33, 0.8); */
    background-size: cover;
    /* color: #181818; */
    background-repeat: no-repeat;
@@ -32,7 +32,8 @@ body
 
 .whiteBG
 {
-   background: rgba(243, 235, 235, 0.8);                       /* or : background-color: url('images/blocknetwork.jpg');*/
+   /* background: rgba(243, 235, 235, 0.8);                       or : background-color: url('images/blocknetwork.jpg'); */
+   background: url('images/blueandblackwallpapers.jpg');
    /* background-size: cover;
    /* color: #181818;
    background-repeat: no-repeat;
