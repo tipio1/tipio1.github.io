@@ -176,6 +176,11 @@ aside
    margin-left: auto; */
 }
 
+a
+{
+   color :rgb(8, 191, 247);
+}
+
 .navElement>div
 {
    margin: 8px;;
