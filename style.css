@@ -19,7 +19,7 @@ don't repeat yourself => attention whit that! */
 
 body
 {
-   /* background: url('images/blueandblackwallpapers.jpg');                   or : background-color: rgba(243, 235, 235, 0.8); */
+   background: url('images/blueandblackwallpapers.jpg');                   /*or : background-color: rgba(243, 235, 235, 0.8);*/
    /* background-color: rgba(36, 33, 33, 0.8); */
    background-size: cover;
    /* color: #181818; */
@@ -46,7 +46,7 @@ body
 /* Header */
 header
 {
-   background: rgba(240, 241, 241, 0.85);                      /* or : url('images/banner.jpg') repeat-x bottom;  */
+   /* background: rgba(240, 241, 241, 0.85);                      or : url('images/banner.jpg') repeat-x bottom;  */
    justify-content: space-between;
    align-items: flex-end;
    color: #221b1c;
