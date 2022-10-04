@@ -1,6 +1,6 @@
 /* style.css
 ---------
-write by Ben.R */
+write by tipio */
 
 /* Element table => dénormalisation : repeat the things / normalisation : keep the system more easy-DRY : 
 don't repeat yourself => attention whit that! */
@@ -19,7 +19,7 @@ don't repeat yourself => attention whit that! */
 
 body
 {
-   background: url('images/blocknetwork.jpg');                   /* or : background-color: rgba(243, 235, 235, 0.8);*/
+   background: url('images/blueandblackwallpapers.jpg');                   /* or : background-color: rgba(243, 235, 235, 0.8);*/
    background-size: cover;
    /* color: #181818; */
    background-repeat: no-repeat;
@@ -123,7 +123,7 @@ nav
 
 aside
 {
-   background: url('images/music.jpg') repeat-x top ;            /* or : rgba(240, 241, 241, 0.85); */
+   background: url('images/blackwallpapers.jpg') repeat-x top ;            /* or : rgba(240, 241, 241, 0.85); */
    justify-content: space-between;
    align-items: flex-end;
    color: #221b1c;
