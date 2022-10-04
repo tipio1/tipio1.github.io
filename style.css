@@ -33,8 +33,7 @@ body
 
 /* Header */
 header
-{
-   background-color: rgba(240, 241, 241, 0.85);                      
+{                     
    justify-content: space-between;
    align-items: flex-end;
    color: #221b1c;
@@ -119,9 +118,7 @@ aside
    float: right;
    font-weight: oblique;
    text-align: center; 
-   background-color: rgba(255, 255, 255, 0.8); 
-   border: 1px solid rgb(8, 245, 8);
-   box-shadow: 1px 1px 1px rgb(182, 13, 13) inset;
+   background-color: rgba(255, 255, 255, 0.45); 
    display: flex; 
    width: 250px;
    height: 500px;
@@ -178,7 +175,7 @@ p
 
 .cv
 {
-   background-color: rgba(255, 255, 255, 0.35);;
+   background-color: rgba(255, 255, 255, 0.45);;
    font-weight: oblique;
    box-shadow: 1px 1px 6px black inset;
    text-align: center;
@@ -291,7 +288,7 @@ h5:hover
 
 .pHome
 {
-   background-color: rgba(255, 255, 255, 0.35);
+   background-color: rgba(255, 255, 255, 0.45);
    font-weight: oblique;
    border: 1px solid black;
    border-radius: 20px;
