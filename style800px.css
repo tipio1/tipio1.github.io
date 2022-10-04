@@ -1,14 +1,13 @@
 /* style.css
 ---------
-write by tipio */
+write by tipio
+don't repeat yourself => attention whit that! */
 
 /* Principals page elements */
-
 *
 {
     font-family: "Trebuchet MS", Verdana, Impact, "Arial Black", Arial, sans-serif;
 }
-
 
 #main_wrapper
 {
@@ -19,11 +18,10 @@ write by tipio */
 body
 {
    flex-direction: column;
-   background: url('images/blueandblackwallpapers.jpg');           /* or : background-color: rgba(243, 235, 235, 0.8);*/
+   background: url('images/blueandblackwallpapers.jpg');
    background-size: cover;
-   /* color: #181818; */
    background-repeat: no-repeat;
-   background-position: top;                             /* image start position */
+   background-position: top;
    position: absolute;
    width: 99%;
    height: 100%;
@@ -32,8 +30,7 @@ body
 /* Header */
 header
 {
-   background: rgba(240, 241, 241, 0.85);             /* or : url('images/banner.jpg') repeat-x bottom;  */
-   /* display: flex; */
+   background: rgba(240, 241, 241, 0.85);
    justify-content: space-between;
    align-items: flex-end;
    color: #221b1c;
@@ -45,9 +42,6 @@ header
 
 .titre
 {
-   /* display: right;
-   flex-direction: column;
-   border: 1px black outset; */
    color: rgb(69, 54, 122);
    font-size: x-large;
    font-weight: oblique;
@@ -58,10 +52,9 @@ header
    clear: both;
    width: 15%;
    align-items: right;
-   /* text-transform: lowercase;                       or : uppercase; for majusculs */
 }
 
-.titre:hover                                           /* links flyover aparance */
+.titre:hover
 {
    text-decoration: underline;
    color: orange; 
@@ -83,7 +76,6 @@ header
 #logo
 {
    display: flex;
-   /* flex-direction: comlumn; */
    align-items: center;
 }
 
@@ -94,7 +86,6 @@ header
 }
 
 /* section */
-
 section
 {
    flex-direction: column;
@@ -112,16 +103,9 @@ div
 
 p
 {
-   /* font-weight: oblique;
-   border: 1px solid black; */
    box-shadow: 1px 1px 1px black inset; 
-   /* text-align: center;
-   width: 700px; */
    width: 150px;
    height: 350px;
-   /* margin: auto;
-   padding: 10px;
-   word-wrap: break-word; */
    color: rgb(172, 143, 226); 
    background-color:none;
    font-size: 1.2em;
@@ -138,19 +122,15 @@ nav
    font-weight: oblique;
    text-align: left;
    text-shadow: 0.5px 0.5px 0.5px black;
-   /* background-color: rgba(243, 235, 235, 0.8);
-   border: 1px solid black;
-   box-shadow: 1px 1px 1px black inset; */
    height: 300px;
    margin: left;
-   padding: 10px;                                                /* marging interior 12px */
+   padding: 10px;
 }
 
 aside
 {
    display: none;
-   background: url('images/blackwallpapers.jpg') repeat-x top ;   /* or : rgba(240, 241, 241, 0.85); */
-   /* justify-content: space-between; */
+   background: url('images/blackwallpapers.jpg') repeat-x top;
    align-items: flex-end;
    color: #221b1c;
    border-bottom: 1px solid #221b1c;
@@ -160,15 +140,11 @@ aside
    float: right ;
    font-weight: oblique;
    text-align: center; 
-   /* background-color: rgba(255, 255, 255, 0.8); 
-   border: 1px solid rgb(8, 245, 8);
-   box-shadow: 1px 1px 1px rgb(182, 13, 13) inset; */
-   /* display: flex; */
    width: 250px;
    height: 600px;
    border-radius: 5px;
    margin: right;
-   padding: 0px;                                              /* marging interior 12px */
+   padding: 0px;
 }
 
 ul
@@ -190,19 +166,6 @@ ul
    position: absolute;
    right: 1px;
    bottom: -150px;
-   /* margin: auto; 
-   /* text-align: right;
-   /* height: 5px;
-   /* border: 1px solid #2b2c55;
-   /* border-radius: 5px;
-   /* font-size: 1.2em;
-   /* padding: 10px 10px 10px 10px; 
-   /* color: white; 
-   /* text-align: right;
-   /* margin-top: 80px;
-   /* clear: right; 
-   /* width: 15%; 
-   /* align-items: right; */
 }
 
 /* #banner_button
@@ -233,13 +196,13 @@ table
    font-family: sans-serif;
    text-align: center;
    background-color: rgba(99, 97, 97, 0.6);
-   border-collapse: separate;             /* or : collapse */
+   border-collapse: separate;
    border-radius: 15px;
    border: 1px solid black;
    width: 55%;
 }
 
-td, th                                    /* Make a border on the td and the th */
+td, th
 {
     border: 1px solid black;
 }
@@ -259,22 +222,15 @@ form
 }
 
 /* Footer */
-
 footer
 {
-   background: url('images/banner.jpg') repeat-x bottom;                 /* or : rgba(218, 224, 224, 0.85); */
-   /* display: flex; */
-   /* justify-content: space-between;
-   align-items: flex-end;
-   color: #221b1c;
-   /* border-bottom: 1px solid #221b1c; */
+   background: url('images/banner.jpg') repeat-x bottom;
    opacity: 0,2;
    border-top: 1px solid #221b1c;
    width: 100%;
    height: auto;
    border-radius: 5px;
    box-shadow: 1px 2px 2px black;
-   /* clear: none; */
 }
 
 h6
@@ -288,7 +244,7 @@ h6
    padding: 10px;
 }
    
-h6:hover                                                       /* links flyover aparance */
+h6:hover
 {
    text-decoration: underline;
    color: orange;
@@ -303,22 +259,6 @@ h6:hover                                                       /* links flyover 
    color: rgb(69, 54, 122);
    text-shadow: 1px 1px 1px black;
    margin-left: auto;
-   /* position: absolute; */
-   /* left: 1px; */
-   /* bottom: -500px; */
-   /* margin: auto; */
-   /* text-align: right; */
-   /* height: 5px;
-   /* border: 1px solid #2b2c55;
-   /* border-radius: 5px;
-   /* font-size: 1.2em;
-   /* padding: 10px 10px 10px 10px; 
-   /* color: white; 
-   /* text-align: right;
-   /* margin-top: 80px;
-   /* clear: right; 
-   /* width: 15%; 
-   /* align-items: right; */
 }
 
 #home
@@ -332,66 +272,4 @@ h6:hover                                                       /* links flyover 
    position: absolute;
    right: 1px;
    margin-right: auto;
-   /* bottom: -500px; */
-   /* margin: auto; 
-   /* text-align: right;
-   /* height: 5px;
-   /* border: 1px solid #2b2c55;
-   /* border-radius: 5px;
-   /* font-size: 1.2em;
-   /* padding: 10px 10px 10px 10px; 
-   /* color: white; 
-   /* text-align: right;
-   /* margin-top: 80px;
-   /* clear: right; 
-   /* width: 15%; 
-   /* align-items: right; */
 }
-
-/* mark
-{
-                                    
-   background-color: #F0F2F4;                                 backgroud color take step on all the page
-}
-
-.float1
-{
-   float: right;
-   margin: auto;
-   border: 1px black outset;
-} 
-
-.float2
-{
-   float: center;
-}
-
-strong
-{
-   color :brown;
-   font-style: italic;
-   text-align: center;
-   text-shadow: 1px 1px 1px black;
-   clear: both;
-}
-
-element
-{
-   font-weight: oblique;
-   border: 1px solid black;
-   box-shadow: 1px 1px 1px black inset;
-   text-align: center;
-   width: 600px;
-   height: 110px;
-   margin-left: 270px;
-   margin: auto;
-   padding: 10px;
-   word-wrap: break-word;
-} 
-
-.repeat
-{
-   color: rgb(61, 78, 60);
-   font-size: large;
-   text-align: center;
-} */

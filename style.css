@@ -1,8 +1,6 @@
 /* style.css
 ---------
-write by tipio */
-
-/* Element table => dénormalisation : repeat the things / normalisation : keep the system more easy-DRY : 
+write by tipio
 don't repeat yourself => attention whit that! */
 
 /* Principals page elements */
@@ -19,34 +17,24 @@ don't repeat yourself => attention whit that! */
 
 body
 {
-   background: url('images/blueandblackwallpapers.jpg');                   /*or : background-color: rgba(243, 235, 235, 0.8);*/
-   /* background-color: rgba(36, 33, 33, 0.8); */
+   background: url('images/blueandblackwallpapers.jpg');
    background-size: cover;
-   /* color: #181818; */
    background-repeat: no-repeat;
-   background-position: top;                                     /* image start position */
+   background-position: top;
    position: absolute;
    width: 99%;
    height: 100%;
 }
 
 .whiteBG
-{
-   /* background: rgba(243, 235, 235, 0.8);                       or : background-color: url('images/blocknetwork.jpg'); */
+{                 
    background: url('images/blueandblackwallpapers.jpg');
-   /* background-size: cover;
-   /* color: #181818;
-   background-repeat: no-repeat;
-   background-position: top;*/                                   /* image start position */
-   /* position: absolute; 
-   width: 99%;
-   height: 100%; */
 }
 
 /* Header */
 header
 {
-   /* background: rgba(240, 241, 241, 0.85);                      or : url('images/banner.jpg') repeat-x bottom;  */
+   background-color: rgba(240, 241, 241, 0.85);                      
    justify-content: space-between;
    align-items: flex-end;
    color: #221b1c;
@@ -58,11 +46,7 @@ header
 
 .titre
 {
-   /* display: right;
-   flex-direction: column;
-   border: 1px black outset; */
    color :rgb(8, 191, 247);
-   /* color: rgb(69, 54, 122); */
    font-size: x-large;
    font-weight: oblique;
    font-weight: bold;
@@ -72,10 +56,9 @@ header
    clear: both;
    width: 15%;
    align-items: right;
-                                                                  /* text-transform: lowercase; or : uppercase; for majusculs */
 }
 
-.titre:hover                                                      /* links flyover aparance */
+.titre:hover
 {
    text-decoration: underline;
    color: orange; 
@@ -91,7 +74,6 @@ header
    font-size: x-large;
    font-weight: oblique;
    font-weight: bold;
-   /* color: rgb(255, 153, 0);                                       rgb(69, 54, 122); */
    margin-top: -60px;
    text-shadow: 1px 1px 1px black;
    clear: both;
@@ -101,7 +83,6 @@ header
 #logo
 {
    display: flex;
-   /* flex-direction: comlumn; */
    align-items: center;
 }
 
@@ -120,17 +101,14 @@ nav
    font-weight: oblique;
    text-align: left;
    text-shadow: 0.5px 0.5px 0.5px black;
-   /* background-color: rgba(243, 235, 235, 0.8);
-   border: 1px solid black;
-   box-shadow: 1px 1px 1px black inset; */
    height: 300px;
    margin: left;  
-   padding: 10px;                                                /* marging interior 12px */
+   padding: 10px;
 }
 
 aside
 {
-   background: url('images/blackwallpapers.jpg') repeat-x top ;            /* or : rgba(240, 241, 241, 0.85); */
+   /* background: url('images/blackwallpapers.jpg') repeat-x top ;            or : rgba(240, 241, 241, 0.85); */
    justify-content: space-between;
    align-items: flex-end;
    color: #221b1c;
@@ -141,15 +119,15 @@ aside
    float: right;
    font-weight: oblique;
    text-align: center; 
-   /* background-color: rgba(255, 255, 255, 0.8); 
+   background-color: rgba(255, 255, 255, 0.8); 
    border: 1px solid rgb(8, 245, 8);
    box-shadow: 1px 1px 1px rgb(182, 13, 13) inset;
-   display: flex;  */
+   display: flex; 
    width: 250px;
    height: 500px;
    border-radius: 5px;
    margin-right: 30px;
-   padding: 0px;                                                 /* marging interior 12px */
+   padding: 0px;
 }
 
 .navElement
@@ -160,20 +138,11 @@ aside
    font-weight: oblique;
    font-size: small;
    text-align: right;
-   /* margin: right; */
-   /* padding: 10px; */                                           /* marging interior 12px */
-   /* padding-bottom: 10px; */
    list-style-type: none;
    display: flex;                                                 /* search to align "nav.Element's block" on one line */
    position: absolute;                                            /* don't want "nav.Element's block" moove with the navigation in the page */
    left: 250px;
    top: 100px;
-   /* border: 1px solid black;
-   float: left;
-   text-shadow: 0.5px 0.5px 0.5px black;
-   background-color: rgba(243, 235, 235, 0.8);
-   box-shadow: 1px 1px 1px black inset;
-   margin-left: auto; */
 }
 
 a
@@ -197,12 +166,9 @@ div
 
 p
 {
-   /* background-color: #d3d3d3; */
    font-weight: oblique;
    border: 1px solid black;
-   /* box-shadow: 1px 1px 1px black inset; */
    text-align: center;
-   /* width: 700px; */
    height: 350px;
    width: 60%;
    margin: auto;
@@ -212,9 +178,8 @@ p
 
 .cv
 {
-   background-color: rgba(255, 255, 255, 0.75);;
+   background-color: rgba(255, 255, 255, 0.35);;
    font-weight: oblique;
-   /* border: 1px solid black; */
    box-shadow: 1px 1px 6px black inset;
    text-align: center;
    width: 1000px;
@@ -241,12 +206,9 @@ strong:hover
 
 .guesses, .lastResult, .lowOrHi
 {
-   /* background-color: #d3d3d3; */
    font-weight: oblique;
-   /* border: 1px solid black; */
    box-shadow: 1px 1px 1px black inset;
    text-align: center;
-   /* width: 700px; */
    height: 8px;
    width: 60%;
    margin: auto;
@@ -258,7 +220,6 @@ strong:hover
 {
    background-color: rgba(255, 255, 255, 0.75);;
    font-weight: oblique;
-   /* border: 1px solid black; */
    box-shadow: 1px 1px 6px black inset;
    text-align: center;
    width: 1000px;
@@ -269,7 +230,7 @@ strong:hover
 }
 
 
-h5                                                               /* game title */
+h5
 {
    color: rgb(8, 191, 247);
    font-style: oblique;
@@ -277,27 +238,21 @@ h5                                                               /* game title *
    text-align: center;
    font-size: x-large;
    margin: 0%;
-   /* padding: 5px;*/
 }
    
-h5:hover                                                         /* links flyover aparance */
+h5:hover
 {
    text-decoration: underline;
    color: rgb(10, 91, 184);
 }
 
-.scrollingTitle                                                  /* js titles */
+.scrollingTitle
 {
    background-color: rgba(112, 112, 112, 0.2);
    width: 520px;
    height: 30px;
    border-radius: 25px;
    margin: auto;
-   box-shadow: 1px 1px 4px rgb(0, 0, 0) inset;
-   /* border: black;   
-   /* position: absolute;                         
-   left: 10%;
-   top: 200px; */
 }
 
 .formScrolling
@@ -312,7 +267,7 @@ h5:hover                                                         /* links flyove
    color: rgb(10, 91, 184);
 }
 
-.scrollingTitleGame                                              /* js titles */
+.scrollingTitleGame
 {
    background-color: rgba(112, 112, 112, 0.2);
    width: 195px;
@@ -334,16 +289,15 @@ h5:hover                                                         /* links flyove
    color: rgb(10, 91, 184);
 }
 
-.qbat
+.pHome
 {
-   background-color: rgba(255, 255, 255, 0.85);
+   background-color: rgba(255, 255, 255, 0.35);
    font-weight: oblique;
    border: 1px solid black;
    border-radius: 20px;
    box-shadow: 1px 1px 6px black inset;
    border-radius: 25%;
    text-align: auto;
-   /* width: 700px; */
    height: 450px;
    width: 72%;
    margin-left: 40px;
@@ -351,17 +305,16 @@ h5:hover                                                         /* links flyove
    word-wrap: break-word;   
 }
 
-.floatQbat
+.floatPHome
 {
    float: right;
-   /* margin: auto; */
    border: 1px black outset;
    border-radius: 5%;
    margin-top: 80px;
    margin-right: 25px;
 }
 
-.qbatTittle                                                       /* why does not work for center ?*/
+.pHomeTittle
 {
    color :brown;
    font-style: italic;
@@ -372,7 +325,7 @@ h5:hover                                                         /* links flyove
 
 ul
 {
-   color: rgb(255, 153, 0);                                                /*rgb(62, 63, 104);*/
+   color: rgb(255, 153, 0);
    font-style: italic;
    text-align: left;
    text-shadow: 0.5px 0.5px 0.5px black;
@@ -385,24 +338,10 @@ ul
    font-weight: bold;
    text-decoration: none;
    color :rgb(8, 191, 247);
-   /* color: rgb(69, 54, 122); */
    text-shadow: 1px 1px 1px black;
    position: absolute;
    right: 20px;
    bottom: 120px;
-   /* margin: auto; 
-   /* text-align: right;
-   /* height: 5px;
-   /* border: 1px solid #2b2c55;
-   /* border-radius: 5px;
-   /* font-size: 1.2em;
-   /* padding: 10px 10px 10px 10px; 
-   /* color: white; 
-   /* text-align: right;
-   /* margin-top: 80px;
-   /* clear: right; 
-   /* width: 15%; 
-   /* align-items: right; */
 }
 
 h5
@@ -419,183 +358,11 @@ h5
    font-family: sans-serif;
    text-align: center;
    background-color: rgba(99, 97, 97, 0.6);
-   border-collapse: separate;                                        /* or : collapse */
+   border-collapse: separate;
    border-radius: 15px;
    border: 1px solid black;
    width: 85%;
 }
-
-/* elementTable */
-.ElementTable
-{
-   margin: auto;
-   margin-left: 25px;
-   font-family: sans-serif;
-   text-align: center;
-   /* background-color: rgba(99, 97, 97, 0.6); */
-   border-collapse: separate;                                 
-   border-radius: 15px;
-   border: 1px solid black;
-   width: 95%;
-}
-
-td, th                                                               /* Make a border on the td and the th */
-{
-   opacity: 0.8;
-   border: 1px solid rgb(247, 243, 243);
-   width: 40px;
-   height: 40px;
-   max-width: 40px;
-   max-height: 40px;
-}
-
-tr:hover td
-{
-   opacity: 0.5;
-}
-
-td:hover 
-{
-   opacity: 1 !important;  
-}
-
-.symbol>div {
-   /* border: 1px solid rgb(0, 0, 0); */
-   text-align: center;
-   padding-right: 0.5px;
-   padding-left: 0.5px;
-}
-
-.element_name
-{
-   font-size: xx-small;
-}
-
-.atomic_number
-{
-   font-size: xx-small;
-}
-
-.chemical_symbol
-{
-   font-size: large;
-}
-
-td:hover .chemical_symbol 
-{
-   text-decoration: underline;
-   color: rgb(0, 0, 0);
-}
-
-.atomic_mass
-{
-   font-size: xx-small;
-}
-
-.primordial
-{
-   border: 1px;
-   border-style: solid;
-}
-
-.Synthetic_element
-{
-   border: 1px;
-   border-style: dotted;
-}
-
-.Radioactivity 
-{
-   border: 1px;
-   border-style: dashed;
-}
-
-.other_non_metals
-{
-   background-color:#98fb98;
-}
-
-.alkaline
-{
-   background-color:#ff6666;
-}
-
-.alkaline_earth
-{
-   background-color:#ffdead
-}
-
-.lanthanides
-{
-   background-color:rgb(255, 191, 255);
-}
-
-.actinides
-{
-   background-color:rgb(255, 153, 204);
-}
-
-.transition_metals
-{
-   background-color:#ffb6c1;
-}
-
-.poor_metals
-{
-   background-color:#d3d3d3;
-}
-
-.metalloids
-{
-   background-color:#cccc99;
-}
-
-.halogen
-{
-   background-color:#ffff99;
-}
-
-.noble_gases
-{
-   background-color:#afeeee;
-}
-
-.unclassified_items
-{
-   background-color:rgb(245, 245, 245);
-}
-
-.gaz
-{
-   color:rgb(255, 0, 0);
-   border-color: rgb(0, 0, 0);
-}
-
-.liquide
-{
-   color:rgb(4, 0, 255);
-   border-color: rgb(0, 0, 0);
-}
-
-.atomic_mass
-{
-   color:black;
-}
-
-
-                                                                     /* 
-                                                                     red : alkaline
-                                                                     beige : alkaline_earth
-                                                                     light pink : lanthanides
-                                                                     dark pink : actinides
-                                                                     Salmon : transition_metals
-                                                                     grey : poor_metals
-                                                                     khaki : metalloids
-                                                                     green : other_non_metals
-                                                                     yellow : halogen
-                                                                     blue : noble_gases
-                                                                     light grey/white : unclassified_items
-                                                                     */
 
 form                                  
 {
@@ -614,19 +381,13 @@ form
 Footer
 footer
 {
-   background: rgba(254, 255, 255, 0.85);                            /* or : url('images/banner.jpg') repeat-x bottom; */
-   /* display: flex; */
-   /* justify-content: space-between;
-   align-items: flex-end;
-   color: #221b1c;
-   /* border-bottom: 1px solid #221b1c; */
+   background: rgba(254, 255, 255, 0.85);
    opacity: 0,2;
    border-top: 1px solid #221b1c;
    width: 100%;
    height: auto;
    border-radius: 5px;
    box-shadow: 1px 2px 2px black;
-   /* clear: none; */
 }
 
 h6
@@ -640,7 +401,7 @@ h6
    padding: 10px;
 }
    
-h6:hover                                                                   /* links flyover aparance */
+h6:hover
 {
    text-decoration: underline;
    color: orange;
@@ -653,25 +414,8 @@ h6:hover                                                                   /* li
    font-weight: bold;
    text-decoration: none;
    color :rgb(8, 191, 247);
-   /* color: rgb(69, 54, 122); */
    text-shadow: 1px 1px 1px black;
    margin-left: auto;
-   /* position: absolute; */
-   /* left: 1px; */
-   /* bottom: -500px; */
-   /* margin: auto; */
-   /* text-align: right; */
-   /* height: 5px;
-   /* border: 1px solid #2b2c55;
-   /* border-radius: 5px;
-   /* font-size: 1.2em;
-   /* padding: 10px 10px 10px 10px; 
-   /* color: white; 
-   /* text-align: right;
-   /* margin-top: 80px;
-   /* clear: right; 
-   /* width: 15%; 
-   /* align-items: right; */
 }
 
 #home
@@ -681,25 +425,9 @@ h6:hover                                                                   /* li
    font-weight: bold;
    text-decoration: none;
    color :rgb(8, 191, 247);
-   /* color: rgb(69, 54, 122); */
-   /* text-shadow: 1px 1px 1px black; */
    position: absolute;
    right: 1px;
    margin-right: auto;
-   /* bottom: -500px; */
-   /* margin: auto; 
-   /* text-align: right;
-   /* height: 5px;
-   /* border: 1px solid #2b2c55;
-   /* border-radius: 5px;
-   /* font-size: 1.2em;
-   /* padding: 10px 10px 10px 10px; 
-   /* color: white; 
-   /* text-align: right;
-   /* margin-top: 80px;
-   /* clear: right; 
-   /* width: 15%; 
-   /* align-items: right; */
 }
 
 #mail
@@ -713,105 +441,5 @@ h6:hover                                                                   /* li
    position: absolute;
    right: 1px;
    margin-right: auto;
-   /* bottom: -500px; */
-   /* margin: auto; 
-   /* text-align: right;
-   /* height: 5px;
-   /* border: 1px solid #2b2c55;
-   /* border-radius: 5px;
-   /* font-size: 1.2em;
-   /* padding: 10px 10px 10px 10px; 
-   /* color: white; 
-   /* text-align: right;
-   /* margin-top: 80px;
-   /* clear: right; 
-   /* width: 15%; 
-   /* align-items: right; */
 }
 
-
-/* alternatif code
-
-table
-{
-   margin: auto;
-   margin-left: 300px;
-   font-family: sans-serif;
-   text-align: center;
-   /* background-color: rgba(99, 97, 97, 0.6); 
-   border-collapse: separate;             /* or : collapse 
-   border-radius: 15px;
-   border: 1px solid black;
-   width: 75%;
-}
-
- .game
-{
-   margin: auto;
-   margin-left: 25px;
-   font-family: sans-serif;
-   text-align: center;
-   background-color: rgba(99, 97, 97, 0.6);
-   border-collapse: separate;   
-   border-radius: 15px;
-   border: 1px solid black;
-   width: 95%; 
-}
-
-tr
-{
-   border: black;
-}
-
-#banner_button
-{
-   position: absolute;
-   bottom: 0;
-   border-radius: 5px;
-   width: 20%;
-   height: 25px;
-   padding-top: 15px;
-   padding-left: 5px;
-   background-color: rgba(196, 182, 182, 0.8);
-   /* color: white; 
-   font-size: 0.8em;
-}
-
-mark
-{                                 
-   background-color: #F0F2F4;
-}
-
-.floatQbat
-{
-   float: right;
-   margin: auto;
-   border: 1px black outset;
-} 
-
-.float2
-{
-   float: center;
-}
-
-element
-{
-   font-weight: oblique;
-   border: 1px solid black;
-   box-shadow: 1px 1px 1px black inset;
-   text-align: center;
-   width: 600px;
-   height: 110px;
-   margin-left: 270px;
-   margin: auto;
-   padding: 10px;
-   word-wrap: break-word;
-} 
-
-.repeat
-{
-   color: rgb(61, 78, 60);
-   font-size: large;
-   text-align: center;
-} 
-*/
