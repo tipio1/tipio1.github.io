@@ -46,21 +46,21 @@ header
 .titre
 {
    color :rgb(8, 191, 247);
-   font-size: x-large;
+   /* font-size: x-large; */
    font-weight: oblique;
    font-weight: bold;
    text-align: center;
    margin-top: 80px;
    text-shadow: 1px 1px 1px black;
    clear: both;
-   width: 15%;
+   width: 100%;
    align-items: right;
 }
 
 .titre:hover
 {
-   text-decoration: underline;
-   color: orange; 
+   /* text-decoration: underline; */
+   color: rgb(10, 91, 184); 
 }
 
  em
@@ -110,19 +110,21 @@ aside
    /* background: url('images/blackwallpapers.jpg') repeat-x top ;            or : rgba(240, 241, 241, 0.85); */
    justify-content: space-between;
    align-items: flex-end;
-   color: #221b1c;
+   /* color: #221b1c;
    border-bottom: 1px solid #221b1c;
+   border: 1px black outset;
    width: 100%;
    box-shadow: 1px 2px 2px black;
-   clear: both;
+   clear: both; */
    float: right;
    font-weight: oblique;
    text-align: center; 
-   background-color: rgba(255, 255, 255, 0.45); 
+   color:lightcyan;
+   background-color: rgba(66, 67, 80, 0.15); 
    /* display: flex;  */
    width: 250px;
    height: 500px;
-   border-radius: 5px;
+   border-radius: 10px;
    margin-right: 30px;
    padding: 0px;
 }
@@ -166,6 +168,7 @@ p
    font-weight: oblique;
    border: 1px solid black;
    text-align: center;
+   color:lightcyan;
    height: 350px;
    width: 60%;
    margin: auto;
@@ -175,7 +178,7 @@ p
 
 .cv
 {
-   background-color: rgba(255, 255, 255, 0.45);;
+   /* background-color: rgba(255, 255, 255, 0.45);;
    font-weight: oblique;
    box-shadow: 1px 1px 6px black inset;
    text-align: center;
@@ -183,7 +186,19 @@ p
    height: 350px;
    margin-left: 40px;
    padding: 2px;
-   border-radius: 20%;
+   border-radius: 20%; */
+   background-color: rgba(66, 67, 80, 0.15);
+   /* font-weight: oblique;
+   border: 1px solid black; */
+   border-radius: 10px;
+   /* box-shadow: 1px 1px 6px black inset;
+   border-radius: 25%; */
+   text-align: auto;
+   height: 450px;
+   width: 72%;
+   margin-left: 40px;
+   padding: 10px;
+   word-wrap: break-word;  
 }
 
 strong
@@ -288,12 +303,12 @@ h5:hover
 
 .pHome
 {
-   background-color: rgba(255, 255, 255, 0.45);
-   font-weight: oblique;
-   border: 1px solid black;
-   border-radius: 20px;
-   box-shadow: 1px 1px 6px black inset;
-   border-radius: 25%;
+   background-color: rgba(66, 67, 80, 0.15);
+   /* font-weight: oblique;
+   border: 1px solid black; */
+   border-radius: 10px;
+   /* box-shadow: 1px 1px 6px black inset;
+   border-radius: 25%; */
    text-align: auto;
    height: 450px;
    width: 72%;
@@ -313,7 +328,7 @@ h5:hover
 
 .pHomeTittle
 {
-   color :brown;
+   color :rgb(8, 191, 247);
    font-style: italic;
    text-align: left;
    text-shadow: 1px 1px 1px black;
