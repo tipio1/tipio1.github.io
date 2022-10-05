@@ -26,10 +26,10 @@ body
    height: 100%;
 }
 
-.whiteBG
+/* .whiteBG
 {                 
    background: url('images/blueandblackwallpapers.jpg');
-}
+} */
 
 /* Header */
 header
@@ -201,7 +201,7 @@ strong:hover
       color: rgb(10, 91, 184);
 }
 
-.guesses, .lastResult, .lowOrHi
+/* .guesses, .lastResult, .lowOrHi
 {
    font-weight: oblique;
    box-shadow: 1px 1px 1px black inset;
@@ -284,7 +284,7 @@ h5:hover
    font-size: large;
    font-style: oblique;
    color: rgb(10, 91, 184);
-}
+} */
 
 .pHome
 {
@@ -328,7 +328,7 @@ ul
    text-shadow: 0.5px 0.5px 0.5px black;
 }
 
-.buttonOne
+/* .buttonOne
 {
    font-size: large;
    font-weight: oblique;
@@ -373,9 +373,9 @@ form
 {
    margin: 30px;
    border: 1px solid black;
-}
+} */
 
-Footer
+/* Footer */
 footer
 {
    background: rgba(254, 255, 255, 0.85);
@@ -387,7 +387,7 @@ footer
    box-shadow: 1px 2px 2px black;
 }
 
-h6
+/* h6
 {
    color: green;
    font-style: oblique;
@@ -413,7 +413,7 @@ h6:hover
    color :rgb(8, 191, 247);
    text-shadow: 1px 1px 1px black;
    margin-left: auto;
-}
+} */
 
 #home
 {
@@ -427,7 +427,7 @@ h6:hover
    margin-right: auto;
 }
 
-#mail
+/* #mail
 {
    font-size: large;
    font-weight: oblique;
@@ -438,5 +438,5 @@ h6:hover
    position: absolute;
    right: 1px;
    margin-right: auto;
-}
+} */
 

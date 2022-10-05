@@ -155,7 +155,7 @@ ul
    text-shadow: 0.5px 0.5px 0.5px black;
 }
 
-#button
+/* #button
 {
    font-size: large;
    font-weight: oblique;
@@ -166,7 +166,7 @@ ul
    position: absolute;
    right: 1px;
    bottom: -150px;
-}
+} */
 
 /* #banner_button
 {
@@ -180,7 +180,7 @@ ul
    background-color: rgba(196, 182, 182, 0.8);
    /* color: white; 
    font-size: 0.8em;
-} */
+}
 
 h5
 {
@@ -219,10 +219,10 @@ form
 {
    margin: 30px;
    border: 1px solid black;
-}
+}*/
 
 /* Footer */
-footer
+/* footer
 {
    background: url('images/banner.jpg') repeat-x bottom;
    opacity: 0,2;
@@ -259,7 +259,7 @@ h6:hover
    color: rgb(69, 54, 122);
    text-shadow: 1px 1px 1px black;
    margin-left: auto;
-}
+} */
 
 #home
 {
