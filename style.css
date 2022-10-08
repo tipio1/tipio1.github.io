@@ -406,13 +406,13 @@ form
 /* Footer */
 footer
 {
-   /* background-color: rgba(66, 67, 80, 0.5); */
+   background-color: rgba(66, 67, 80, 0.3);
    /* opacity: 0,2; */
-   border-top: 1px solid #221b1c;
+   border-top: 1px solid #7f8fd4;
    width: 100%;
    height: auto;
-   border-radius: 5px;
-   box-shadow: 1px 2px 2px black;
+   /* border-radius: 5px; */
+   /* box-shadow: 1px 2px 2px black; */
 }
 
 h2
@@ -423,7 +423,8 @@ h2
    text-align: center;
    font-size: medium;
    margin: left;
-   padding: 10px;
+   margin-top: 30px;
+   padding: 2px;
 }
 
 #infinity
@@ -435,6 +436,7 @@ h2
    /* color :rgb(8, 191, 247); */
    text-shadow: 1px 1px 1px black;
    margin-left: auto;
+   margin-top: -45px;
 }
 
 #mail
@@ -448,6 +450,8 @@ h2
    position: absolute;
    right: 1px;
    margin-right: auto;
+   margin-top: -45px;
+
 }
 
 /*
