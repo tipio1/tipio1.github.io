@@ -395,7 +395,7 @@ form
 footer
 {
    background-color: rgba(66, 67, 80, 0.5);
-   opacity: 0,2;
+   /* opacity: 0,2; */
    border-top: 1px solid #221b1c;
    width: 100%;
    height: auto;
@@ -419,7 +419,7 @@ h6:hover
 {
    text-decoration: underline;
    color: orange;
-}
+} */
 
 #infinity
 {
@@ -427,11 +427,25 @@ h6:hover
    font-weight: oblique;
    font-weight: bold;
    text-decoration: none;
-   color :rgb(8, 191, 247);
+   /* color :rgb(8, 191, 247); */
    text-shadow: 1px 1px 1px black;
    margin-left: auto;
-} */
+}
 
+#mail
+{
+   font-size: large;
+   font-weight: oblique;
+   font-weight: bold;
+   text-decoration: none;
+   /* color: rgb(69, 54, 122); */
+   text-shadow: 1px 1px 1px black;
+   position: absolute;
+   right: 1px;
+   margin-right: auto;
+}
+
+/*
 #home
 {
    font-size: large;
@@ -442,18 +456,6 @@ h6:hover
    position: absolute;
    right: 1px;
    margin-right: auto;
-}
+}*/
 
-/* #mail
-{
-   font-size: large;
-   font-weight: oblique;
-   font-weight: bold;
-   text-decoration: none;
-   color: rgb(69, 54, 122);
-   text-shadow: 1px 1px 1px black;
-   position: absolute;
-   right: 1px;
-   margin-right: auto;
-} */
 
