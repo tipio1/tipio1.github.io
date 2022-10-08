@@ -389,7 +389,19 @@ form
 {
    margin: 30px;
    border: 1px solid black;
-} */
+}
+
+#home
+{
+   font-size: large;
+   font-weight: oblique;
+   font-weight: bold;
+   text-decoration: none;
+   color :rgb(8, 191, 247);
+   position: absolute;
+   right: 1px;
+   margin-right: auto;
+}*/
 
 /* Footer */
 footer
@@ -413,13 +425,6 @@ h2
    margin: left;
    padding: 10px;
 }
-
-/*
-h6:hover
-{
-   text-decoration: underline;
-   color: orange;
-} */
 
 #infinity
 {
@@ -446,16 +451,8 @@ h6:hover
 }
 
 /*
-#home
+h6:hover
 {
-   font-size: large;
-   font-weight: oblique;
-   font-weight: bold;
-   text-decoration: none;
-   color :rgb(8, 191, 247);
-   position: absolute;
-   right: 1px;
-   margin-right: auto;
-}*/
-
-
+   text-decoration: underline;
+   color: orange;
+} */
