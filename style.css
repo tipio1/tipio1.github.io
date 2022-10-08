@@ -43,7 +43,7 @@ header
    clear: both;
 }
 
-.titre
+.title
 {
    color :rgb(8, 191, 247);
    /* font-size: x-large; */
@@ -57,7 +57,7 @@ header
    align-items: right;
 }
 
-.titre:hover
+.title:hover
 {
    /* text-decoration: underline; */
    color: rgb(10, 91, 184); 
