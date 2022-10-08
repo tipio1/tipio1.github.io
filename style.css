@@ -126,6 +126,7 @@ aside
    height: 500px;
    border-radius: 10px;
    margin-right: 30px;
+   margin-top: 80px;
    padding: 0px;
    border: 1px solid black;
 }
@@ -406,7 +407,7 @@ form
 /* Footer */
 footer
 {
-   background-color: rgba(66, 67, 80, 0.3);
+   background-color: rgba(66, 67, 80, 0.15);
    /* opacity: 0,2; */
    border-top: 1px solid #7f8fd4;
    width: 100%;
