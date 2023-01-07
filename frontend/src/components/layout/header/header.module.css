@@ -1,5 +1,5 @@
 .header {
-    background: #1d1d1f;
+    background: rgba(0, 0, 0, 0.2);
     display: flex;
     align-items: left;
     justify-content: left;
@@ -10,11 +10,14 @@
 .p {
     color: #4EA8DE;
     margin-top: 80px;
+    font-weight: 700;
+    font-size: 18px;
+
 }
 
 .search {
     position: relative;
-    margin-left: 350px;
+    margin-left: 325px;
     margin-top: 100px;
     height: 40px;
     bottom: -20px;

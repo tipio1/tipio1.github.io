@@ -11,11 +11,11 @@ function App() {
       // SI je suis sur  monsite.com/home => <Home/>
       // Si je suis sur monsite.com/projet => <Projet/>
   return (
-    <>
+    <div className="body">
       <Header />
       <Home />
       <Footer />
-    </>
+    </div>
   )
 }
 

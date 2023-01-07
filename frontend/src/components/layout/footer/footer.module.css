@@ -1,0 +1,16 @@
+.footer {
+    background: rgba(0, 0, 0, 0.2);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100px;
+    position: relative;
+    /* border: white solid 1px; */
+}
+
+.footer > p {
+    color: #4EA8DE;
+    align-items: center;
+    font-size: 14px;
+    font-weight: 700;
+}
