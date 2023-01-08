@@ -9,25 +9,6 @@ interface IProject {
   imageURL: string;
 }
 
-interface IIntro {
-  title: string;
-}
-
-const intro: IIntro[] = [
-  {
-    title: "Cybersecurity",
-  },
-  {
-    title: "System administration",
-  },
-  {
-    title: "Programming",
-  },
-  {
-    title: "Technology watch focused on IT and Cybersecurity",
-  },
-];
-
 const projects: IProject[] = [
   {
     title: "Project 1 FROM VARIABLE",
@@ -56,15 +37,6 @@ const projects: IProject[] = [
 ];
 
 type ProjectProps = { value: IProject };
-type IntroProps = { value: IIntro };
-
-function Intro({ value }: IntroProps) {
-  return (
-    <div className={styles.h2}>
-      <li>{value.title}</li>
-    </div>
-  );
-}
 
 function Project({ value }: ProjectProps) {
   const [like, setLike] = useState(Math.floor(Math.random() * 1000));
@@ -93,26 +65,15 @@ function Project({ value }: ProjectProps) {
     </div>
   );
 }
+
 export function Home() {
   return (
     <section className={styles.home}>
       <div>
-        <h1 className={styles.h1}>
-          Information site on various computer subjects such as:
-        </h1>
-        <div className="intro-wrapper">
-          {intro.map((intro) => {
-            return <Intro value={intro} />;
-          })}
-        </div>
+        <h1 className={styles.h1}>Work completed:</h1>
         <header className={styles.header}>
           <div>
-            <p className={styles.p}>work completed</p>
             <span>4</span>
-          </div>
-          <div>
-            <p className={styles.textPurple}>work in progress</p>
-            <span>2</span>
           </div>
         </header>
         <div className={styles.projectWrapper}>
@@ -123,12 +84,8 @@ export function Home() {
       </div>
       <footer className={styles.footer}>
         <div>
-          <p className={styles.p}>social network</p>
-          <span>00</span>
-        </div>
-        <div>
-          <p className={styles.textPurpleFooter}>social network</p>
-          <span>00</span>
+          <p className={styles.textPurpleFooter}>Work in progress</p>
+          <span>2</span>
         </div>
       </footer>
     </section>
