@@ -40,6 +40,7 @@ type ProjectProps = { value: IProject };
 
 function Project({ value }: ProjectProps) {
   const [like, setLike] = useState(Math.floor(Math.random() * 1000));
+  const [clicked, setClicked] = useState(false);
   return (
     <div className={styles.project} onClick={() => {}}>
       <div className={styles.title}>{value.title}</div>
@@ -59,9 +60,12 @@ function Project({ value }: ProjectProps) {
       <div
         className={styles.like}
         onClick={() => {
-          setLike(like + 1);
+          if (clicked === false) {
+            setLike(like + 1);
+            setClicked(true);
+          }
         }}
-      >{`${like} like${like > 1 ? "s" : ""}`}</div>
+        >{`${like} like${like > 1 ? "s" : ""}`}</div>
     </div>
   );
 }
