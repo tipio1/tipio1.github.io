@@ -4,7 +4,7 @@ import laptop from "./../../assets/laptop.jpg";
 import react from "./../../assets/react.svg";
 
 interface IProject {
-  title: string;
+  title: string; 
   description: string;
   imageURL: string;
 }
@@ -41,8 +41,12 @@ type ProjectProps = { value: IProject };
 function Project({ value }: ProjectProps) {
   const [like, setLike] = useState(Math.floor(Math.random() * 1000));
   const [clicked, setClicked] = useState(false);
+  const [selected, setSelected] = useState(false)
   return (
-    <div className={styles.project} onClick={() => {}}>
+    <div>
+    <div className={`${styles.project} ${selected? styles.selected:null}`} onClick={() => {
+      setSelected(!selected);
+    }}>
       <div className={styles.title}>{value.title}</div>
       <div className={styles.description}>{value.description}</div>
       <br></br>
@@ -56,6 +60,7 @@ function Project({ value }: ProjectProps) {
           }}
           src={value.imageURL}
         />
+      </div>
       </div>
       <div
         className={styles.like}

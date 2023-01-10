@@ -67,14 +67,33 @@
   user-select: none;
 }
 
+@keyframes background {
+  from {background-color: #4EA8DE;}
+  to {background-color: #8284FA;}
+}
+
+.selected {
+  background-color: #4EA8DE;
+  margin: 10px;
+  border: 1px solid rgb(88, 174, 255, 0.2);
+  padding: 10px;
+  cursor: pointer;
+  user-select: none;
+  animation-name: background;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+}
+
 .like {
   color: rgb(119, 119, 119);
   border: 1px solid rgb(88, 174, 255, 0.2);
   border-radius: 15px;
   background-color: #8cbedd;
   float: left;
-  margin-top: -20px;
+  margin-top: -40px;
+  margin-left: 15px;
   padding: 2px 2px;
+  cursor: pointer;
 }
 
 .title {
