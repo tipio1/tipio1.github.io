@@ -4,6 +4,7 @@ import laptop from "./../../assets/laptop.jpg";
 import react from "./../../assets/react.svg";
 
 interface IProject {
+  id: number;
   title: string;
   description: string;
   imageURL: string;
@@ -11,58 +12,59 @@ interface IProject {
 
 const projects: IProject[] = [
   {
+    id: 0,
     title: "Project 1 FROM VARIABLE",
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nunc vel tincidunt lacinia, nunc nisl aliquam massa, eget aliquam nisl nisl sit amet nisl. Sed euismod, nunc vel tincidunt lacinia, nunc nisl aliquam massa, eget aliquam nisl nisl sit amet nisl.",
     imageURL: `${laptop}`,
   },
   {
+    id: 1,
     title: "Project 2 ",
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nunc vel tincidunt lacinia, nunc nisl aliquam massa, eget aliquam nisl nisl sit amet nisl. Sed euismod, nunc vel tincidunt lacinia, nunc nisl aliquam massa, eget aliquam nisl nisl sit amet nisl.",
     imageURL: `${react}`,
   },
   {
+    id: 2,
     title: "Project 3 ",
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nunc vel tincidunt lacinia, nunc nisl aliquam massa, eget aliquam nisl nisl sit amet nisl. Sed euismod, nunc vel tincidunt lacinia, nunc nisl aliquam massa, eget aliquam nisl nisl sit amet nisl.",
-    imageURL: "./images/project3.png",
+    imageURL: `${react}`,
   },
   {
+    id: 3,
     title: "Project 4 ",
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nunc vel tincidunt lacinia, nunc nisl aliquam massa, eget aliquam nisl nisl sit amet nisl. Sed euismod, nunc vel tincidunt lacinia, nunc nisl aliquam massa, eget aliquam nisl nisl sit amet nisl.",
-    imageURL: "./images/project4.png",
+    imageURL: `${react}`,
   },
 ];
 
-type ProjectProps = { value: IProject };
+type ProjectProps = {
+  value: IProject;
+  onClick: (id: number) => void;
+  isSelected: boolean;
+};
 
-function Project({ value }: ProjectProps) {
+function Project({ value, onClick, isSelected }: ProjectProps) {
   const [like, setLike] = useState(Math.floor(Math.random() * 1000));
   const [clicked, setClicked] = useState(false);
-  const [selected, setSelected] = useState(false);
+
   return (
     <div>
       <div
-        className={`${styles.project} ${selected ? styles.selected : null}`}
+        className={`${styles.project} ${isSelected ? styles.selected : null}`}
         onClick={() => {
-          setSelected(!selected);
+          onClick(value.id);
         }}
       >
+        <div className={styles.title}>{value.id}</div>
         <div className={styles.title}>{value.title}</div>
         <div className={styles.description}>{value.description}</div>
         <br></br>
         <div className={styles.imageURL}>
-          <img
-            style={{
-              maxWidth: 200,
-              maxHeight: 200,
-              minHeight: 100,
-              minWidth: 100,
-            }}
-            src={value.imageURL}
-          />
+          <img src={value.imageURL} />
         </div>
       </div>
       <div
@@ -79,6 +81,8 @@ function Project({ value }: ProjectProps) {
 }
 
 export function Home() {
+  const [selectedProject, setSelectedProject] = useState<number | null>(null);
+
   return (
     <section className={styles.home}>
       <div className={styles.projectBloc}>
@@ -91,7 +95,16 @@ export function Home() {
         </header>
         <div className={styles.projectsCard}>
           {projects.map((project) => {
-            return <Project value={project} />;
+            return (
+              <Project
+                value={project}
+                onClick={(id) => {
+                  console.log(id);
+                  setSelectedProject(id === selectedProject ? null : id);
+                }}
+                isSelected={selectedProject === project.id}
+              />
+            );
           })}
         </div>
         <footer className={styles.footer}>

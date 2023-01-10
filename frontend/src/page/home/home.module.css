@@ -25,10 +25,10 @@
 }
 
 /* projects  */
-.projectBloc {
+/* .projectBloc {
   border: 1px solid rgb(88, 174, 255, 0.2);
   border-radius: 10px;
-}
+} */
 
 .header {
   display: flex;
@@ -132,6 +132,14 @@
   justify-content: center;
   margin-bottom: 15px;
 }
+
+.imageURL > img {
+  max-width: 200px;
+  max-height: 200px;
+  min-height: 100px;
+  min-width: 100px;
+}
+
 
 .footer {
   display: flex;

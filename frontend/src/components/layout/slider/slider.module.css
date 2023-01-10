@@ -1,5 +1,29 @@
+.h1 {
+    color: #8cbedd;
+    text-align: left;
+  }
+  
+.h2 {
+color: #8cbedd;
+size: 8px;
+font-weight: 300;
+}
 
-/* skills */
+.h3 {
+border: 1px solid rgb(88, 174, 255, 0.2);
+border-radius: 10px;
+color: #8284FA;
+place-content: center;
+}
+
+.p {
+color: #4EA8DE;
+font-size: 14px;
+font-weight: 700;
+text-align: center;
+}
+
+/* slide */
 .sliderBloc {
     border: 1px solid rgb(88, 174, 255, 0.2);
     border-radius: 10px;
@@ -12,8 +36,9 @@
   .container{
     border: 1px solid rgb(88, 174, 255, 0.2);
     border-radius: 10px;
-    width: 1600px;
-    margin: auto;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
   }
   
   .subSkillsCard{
@@ -68,11 +93,16 @@
   .mySlider{
     border: 1px solid rgb(88, 174, 255, 0.2);
     border-radius: 10px;
+    display: flex;
+    place-content: center;
   }
   
   .slide{
-    border: 1px solid rgb(88, 174, 255, 0.2);
+    border: 1px solid rgba(255, 88, 130, 0.2);
     border-radius: 10px;
+    margin-left: 5px;
+    margin-right: 5px;
+    width: 150px;
   }
   
   .slideItem{
