@@ -4,7 +4,7 @@ import laptop from "./../../assets/laptop.jpg";
 import react from "./../../assets/react.svg";
 
 interface IProject {
-  title: string; 
+  title: string;
   description: string;
   imageURL: string;
 }
@@ -41,26 +41,29 @@ type ProjectProps = { value: IProject };
 function Project({ value }: ProjectProps) {
   const [like, setLike] = useState(Math.floor(Math.random() * 1000));
   const [clicked, setClicked] = useState(false);
-  const [selected, setSelected] = useState(false)
+  const [selected, setSelected] = useState(false);
   return (
     <div>
-    <div className={`${styles.project} ${selected? styles.selected:null}`} onClick={() => {
-      setSelected(!selected);
-    }}>
-      <div className={styles.title}>{value.title}</div>
-      <div className={styles.description}>{value.description}</div>
-      <br></br>
-      <div className={styles.imageURL}>
-        <img
-          style={{
-            maxWidth: 200,
-            maxHeight: 200,
-            minHeight: 100,
-            minWidth: 100,
-          }}
-          src={value.imageURL}
-        />
-      </div>
+      <div
+        className={`${styles.project} ${selected ? styles.selected : null}`}
+        onClick={() => {
+          setSelected(!selected);
+        }}
+      >
+        <div className={styles.title}>{value.title}</div>
+        <div className={styles.description}>{value.description}</div>
+        <br></br>
+        <div className={styles.imageURL}>
+          <img
+            style={{
+              maxWidth: 200,
+              maxHeight: 200,
+              minHeight: 100,
+              minWidth: 100,
+            }}
+            src={value.imageURL}
+          />
+        </div>
       </div>
       <div
         className={styles.like}
@@ -70,7 +73,7 @@ function Project({ value }: ProjectProps) {
             setClicked(true);
           }
         }}
-        >{`${like} like${like > 1 ? "s" : ""}`}</div>
+      >{`${like} like${like > 1 ? "s" : ""}`}</div>
     </div>
   );
 }
@@ -78,25 +81,26 @@ function Project({ value }: ProjectProps) {
 export function Home() {
   return (
     <section className={styles.home}>
-      <div>
-        <h1 className={styles.h1}>Work completed:</h1>
+      <div className={styles.projectBloc}>
+        <h1 className={styles.h1}>Works:</h1>
         <header className={styles.header}>
           <div>
+            <p className={styles.p}>Work completd</p>
             <span>4</span>
           </div>
         </header>
-        <div className={styles.projectWrapper}>
+        <div className={styles.projectsCard}>
           {projects.map((project) => {
             return <Project value={project} />;
           })}
         </div>
+        <footer className={styles.footer}>
+          <div>
+            <p className={styles.textPurpleFooter}>Work in progress</p>
+            <span>2</span>
+          </div>
+        </footer>
       </div>
-      <footer className={styles.footer}>
-        <div>
-          <p className={styles.textPurpleFooter}>Work in progress</p>
-          <span>2</span>
-        </div>
-      </footer>
     </section>
   );
 }

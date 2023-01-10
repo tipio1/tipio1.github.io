@@ -4,6 +4,7 @@
 
 import { Header } from "./components/layout/header"
 import { Home } from "./page/home"
+// import { Timeline } from "./components/layout/timeline"
 import { Footer } from "./components/layout/footer"
 
 function App() {
@@ -13,6 +14,7 @@ function App() {
   return (
     <div className="body">
       <Header />
+      {/* <Timeline /> */}
       <Home />
       <Footer />
     </div>
