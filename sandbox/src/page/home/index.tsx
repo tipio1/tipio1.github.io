@@ -3,6 +3,7 @@ import laptop from "./../../assets/laptop.jpg";
 import infinity from "./../../assets/infinity.png";
 import react from "./../../assets/react.svg";
 import vite from "./../../assets/vite.svg";
+import { useState } from "react";
 
 // interface declaration: inerface <interface name (IProject)> {id:number; title:string;}
 interface IProject {
@@ -58,20 +59,45 @@ const imagesCollection: IImage[] = [
 ];
 
 // props declaration: type <propsname (ProjectProps)> = {value: <interface name>};
-type ProjectProps = { value: IProject };
+type ProjectProps = {
+  value: IProject;
+  onClick: (id: number) => void;
+  isSelected: boolean;
+};
+
 type ImageProps = { value: IImage };
 
 // function to map projects in Home
-function Project({ value }: ProjectProps) {
+function Project({ value, isSelected, onClick }: ProjectProps) {
+  const [like, setLike] = useState(Math.floor(Math.random() * 1000));
+  const [clicked, setClicked] = useState(false);
+
   return (
-    <div className={styles.bloc}>
-      <div>{value.id}</div>
-      <div>{value.date}</div>
-      <div>{value.description}</div>
-      <div>
-        <img src={value.imageURL} width="200" />
+    <div>
+      <div
+        className={`${styles.bloc} ${isSelected ? styles.blocSelected : null}`}
+        onClick={() => {
+          onClick(value.id);
+        }}
+      >
+        <div>{value.id}</div>
+        <div>{value.date}</div>
+        <div>{value.description}</div>
+        <div>
+          <img src={value.imageURL} width="200" />
+        </div>
       </div>
-      <div className={styles.like}>like</div>
+      <div
+        className={styles.like}
+        onClick={() => {
+          if (clicked === false) {
+            setLike(like + 1);
+            setClicked(true);
+          }
+        }}
+      >
+        {`${like} like${like > 1 ? "s" : ""}`}
+      </div>
     </div>
   );
 }
@@ -88,6 +114,8 @@ function Images({ value }: ImageProps) {
 
 // Home function
 export function Home() {
+  const [selectedProject, setSelectedProject] = useState<number | null>(null);
+
   return (
     <div className={styles.home}>
       <h1>
@@ -104,7 +132,16 @@ export function Home() {
         <div className={styles.projectBloc}>
           {/* map Project function: {projects.map((project) => {return <Project value={project} />;})} */}
           {projects.map((project) => {
-            return <Project value={project} />;
+            return (
+              <Project
+                value={project}
+                onClick={(id) => {
+                  console.log(id);
+                  setSelectedProject(id === selectedProject ? null : id);
+                }}
+                isSelected={selectedProject === project.id}
+              />
+            );
           })}
         </div>
       </div>
