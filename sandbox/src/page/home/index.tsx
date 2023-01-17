@@ -13,7 +13,6 @@ interface IProject {
   imageURL: string;
 }
 
-
 // IProject content declaration: const <const name (projects)> : <interface name>[] = [{<interface content>},{<interface content>},];
 const projects: IProject[] = [
   {
@@ -41,7 +40,6 @@ const projects: IProject[] = [
     imageURL: `${infinity}`,
   },
 ];
-
 
 // props declaration: type <propsname (ProjectProps)> = {value: <interface name>};
 type ProjectProps = {
@@ -86,7 +84,6 @@ function Project({ value, isSelected, onClick }: ProjectProps) {
     </div>
   );
 }
-
 
 // Home function
 export function Home() {
