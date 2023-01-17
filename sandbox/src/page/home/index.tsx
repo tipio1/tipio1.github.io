@@ -1,9 +1,8 @@
 import styles from "./home.module.css";
-import laptop from "./../../assets/laptop.jpg";
 import infinity from "./../../assets/infinity.png";
-import react from "./../../assets/react.svg";
-import vite from "./../../assets/vite.svg";
 import { useState } from "react";
+import { Images } from "../../components/layout/carousel";
+import { imagesCollection } from "../../components/layout/carousel";
 
 // interface declaration: inerface <interface name (IProject)> {id:number; title:string;}
 interface IProject {
@@ -14,9 +13,6 @@ interface IProject {
   imageURL: string;
 }
 
-interface IImage {
-  imageURL: string;
-}
 
 // IProject content declaration: const <const name (projects)> : <interface name>[] = [{<interface content>},{<interface content>},];
 const projects: IProject[] = [
@@ -46,17 +42,6 @@ const projects: IProject[] = [
   },
 ];
 
-const imagesCollection: IImage[] = [
-  {
-    imageURL: `${react}`,
-  },
-  {
-    imageURL: `${laptop}`,
-  },
-  {
-    imageURL: `${vite}`,
-  },
-];
 
 // props declaration: type <propsname (ProjectProps)> = {value: <interface name>};
 type ProjectProps = {
@@ -65,7 +50,7 @@ type ProjectProps = {
   isSelected: boolean;
 };
 
-type ImageProps = { value: IImage };
+// type ImageProps = { value: IImage };
 
 // function to map projects in Home
 function Project({ value, isSelected, onClick }: ProjectProps) {
@@ -102,15 +87,6 @@ function Project({ value, isSelected, onClick }: ProjectProps) {
   );
 }
 
-function Images({ value }: ImageProps) {
-  return (
-    <div>
-      <div className={styles.laptopIMG}>
-        <img src={value.imageURL} width="200" />
-      </div>
-    </div>
-  );
-}
 
 // Home function
 export function Home() {
@@ -153,7 +129,7 @@ export function Home() {
           Fusce euismod, tortor egestas imperdiet convallis, orci leo commodo
           urna, vitae auctor metus orci ut nisi.
         </p>
-        <div className={styles.imagesCollection}>
+        <div className={styles.carousel}>
           {imagesCollection.map((image) => {
             return <Images value={image} />;
           })}
