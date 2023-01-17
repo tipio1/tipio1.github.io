@@ -41,7 +41,7 @@ type ImageProps = { value: IImage };
 
 export function Images({ value }: ImageProps) {
   let deg = 0;
-  let nElements;
+  let nElements: number;
 
   window.onresize = () => {
     responsiveDisplay();
@@ -52,7 +52,7 @@ export function Images({ value }: ImageProps) {
   });
 
   function responsiveDisplay() {
-    let z;
+    let z:number;
     if (window.innerWidth < 600) z = 190;
     else if (window.innerWidth < 820) z = 250;
     else if (window.innerWidth < 1200) z = 400;
@@ -62,21 +62,21 @@ export function Images({ value }: ImageProps) {
     const span = document.querySelectorAll(".box span");
     span.forEach((element, i) => {
       nElements = span.length;
-      const valeur = (360 / nElements) * (i + 1);
-      element.style.transform = `rotateY(${value}deg) translateZ(${z}px)`;
+      const val = (360 / nElements) * (i + 1);
+      element.style.transform = `rotateY(${val}deg) translateZ(${z}px)`;
     });
   }
 
   function clickButtonLeft() {
     deg -= 360 / nElements;
     const box = document.querySelectorAll(".box");
-    box.style.transform = "perspective(1000px) rotateY(" + deg + "deg)";
+    box.style.transform = `perspective(1000px) rotateY(${deg}deg)`;
   }
 
   function clickButtonRight() {
     deg += 360 / nElements;
     const box = document.querySelectorAll(".box");
-    box.style.transform = "perspective(1000px) rotateY(" + deg + "deg)";
+    box.style.transform = `perspective(1000px) rotateY(${deg}deg)`;
   }
 
   return (
