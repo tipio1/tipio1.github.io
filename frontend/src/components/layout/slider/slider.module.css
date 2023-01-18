@@ -1,0 +1,139 @@
+.h1 {
+    color: #8cbedd;
+    text-align: left;
+  }
+  
+.h2 {
+color: #8cbedd;
+size: 8px;
+font-weight: 300;
+}
+
+.h3 {
+border: 1px solid rgb(88, 174, 255, 0.2);
+border-radius: 10px;
+color: #8284FA;
+place-content: center;
+}
+
+.p {
+color: #4EA8DE;
+font-size: 14px;
+font-weight: 700;
+text-align: center;
+}
+
+/* slide */
+.sliderBloc {
+    border: 1px solid rgb(88, 174, 255, 0.2);
+    border-radius: 10px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .container{
+    border: 1px solid rgb(88, 174, 255, 0.2);
+    border-radius: 10px;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .subSkillsCard{
+    border: 1px solid rgb(88, 174, 255, 0.2);
+    border-radius: 10px;
+    width: 85%;
+    margin: auto;
+  }
+  
+  @media(max-with:1600px){
+    .container{
+      width: 100%;
+    }
+  }
+  
+  .sliderWrapper{
+    border: 1px solid rgb(88, 174, 255, 0.2);
+    border-radius: 10px;
+  }
+  
+  .controller{
+    border: 1px solid rgb(88, 174, 255, 0.2);
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .buttonControl {
+    /* border: 1px solid rgb(255, 88, 144); */
+    border-radius: 10px;
+    /* color: #49050f; */
+    font-size: 1rem;
+  }
+  
+  .previous .next{
+    /* border: 1px solid rgb(88, 174, 255, 0.2);
+    border-radius: 10px; */
+    padding: 2px;
+    width: 30px;
+    cursor: pointer;
+    border-radius: 10px;
+    outline: none;
+    transition: 0.7 ease-in-out;
+    background-color: black;
+    box-shadow: 0 0 5px #bbb;
+  }
+  
+  .previous:hover .next:hover{
+    border: 1px solid rgb(88, 174, 255, 0.2);
+  }
+  
+  .mySlider{
+    border: 1px solid rgb(88, 174, 255, 0.2);
+    border-radius: 10px;
+    display: flex;
+    place-content: center;
+  }
+  
+  .slide{
+    border: 1px solid rgba(255, 88, 130, 0.2);
+    border-radius: 10px;
+    margin-left: 5px;
+    margin-right: 5px;
+    width: 150px;
+  }
+  
+  .slideItem{
+    width: 100%;
+    height: 275px;
+    border: 1px solid rgb(88, 174, 255, 0.2);
+    border-radius: 10px;
+    background-position: center;
+    background-size: cover;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.5s;
+  }
+  
+  .slideItem:hover{
+    box-shadow: 0 0 0 100px rgba(255, 255, 255, 0.9) inset;
+  }
+  
+  .slideItem a{
+    text-decoration: none;
+    transform: scale(0);
+    transition: 0.8s;
+    font-size: 1.5rem;
+    color: #4EA8DE;
+    opacity: 0;
+  }
+  
+  .slideItem:hover a{
+    transform: scale(1);
+    opacity: 1;
+  }
+  

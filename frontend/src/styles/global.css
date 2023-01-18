@@ -1,0 +1,23 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Inter', sans-serif;
+}
+
+body {
+  background: #191919;
+  min-height: 100vh;
+}
+
+.slideBloc{
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  margin-top: 10px;
+  padding: 0 1rem;
+}
+
+/* button {
+  cursor: pointer;
+} */
